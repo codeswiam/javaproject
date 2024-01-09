@@ -1,4 +1,8 @@
-import org.jsoup.*;
+package scrapers;
+
+import db.DBManager;
+import debug.ScraperDebug;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -19,7 +23,7 @@ public class EmploiScraper {
     protected  ArrayList<String> postsUrl = new ArrayList<>();
     protected ArrayList<DataItem> posts = new ArrayList<>();
     protected int maxPageToScrape = 20; // change back to 4 // or maybe make it 30
-    static protected int maxPostsToScrape = 500; // change to 1000 later on
+    public static final int maxPostsToScrape = 500; // change to 1000 later on
     protected ScraperListener listener = null;
 
     @Override
@@ -51,7 +55,7 @@ public class EmploiScraper {
             return Integer.parseInt(output);
         } catch (Exception e) {
             this.pagesNumber = 0;
-            System.out.println(Arrays.toString(e.getStackTrace()));
+            ScraperDebug.debugPrint(Arrays.toString(e.getStackTrace()));
             return 0;
         }
     }
@@ -81,7 +85,7 @@ public class EmploiScraper {
                 ScraperDebug.debugPrint("Post Url: " + title.attr("data-href"));
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 
@@ -143,10 +147,10 @@ public class EmploiScraper {
         ScraperDebug.debugPrint("Total Size: " + item.getFormatedSize());
 
         return item;
-    };
+    }
     
     public void fetchAllPostsAttributes() {
-        int max = this.maxPostsToScrape;
+        int max = maxPostsToScrape;
         int nbr = 0;
         for(String postUrl: this.postsUrl) {
             ScraperDebug.debugPrint("Loading data from post: " + postUrl);
@@ -203,10 +207,10 @@ public class EmploiScraper {
         try {
             String selector = "div.job-ad-company-description > a";
             String content = doc.selectFirst(selector).attr("href");
-            // ScraperDebug.debugPrint("Company URL:" + this.baseUrl + content);
             doc = Jsoup.connect(this.baseUrl + content).get();
             Elements details = doc.select("#company-profile-details > tbody > tr");
-            String country = "", city = "";
+            String country = "";
+            String city = "";
             for(Element d: details) {
                 if(d.selectFirst("#company-profile-city") != null){
                     city = d.selectFirst("td:nth-child(3)").text();
@@ -239,7 +243,6 @@ public class EmploiScraper {
         try {
             String selector = "div.job-ad-company-description > a";
             String content = doc.selectFirst(selector).attr("href");
-            // ScraperDebug.debugPrint("Company URL:" + this.baseUrl + content);
             doc = Jsoup.connect(this.baseUrl + content).get();
             content = doc.selectFirst(".company-profile-description").text().substring(27).trim();
             ScraperDebug.debugPrint("Company description: " + content);
@@ -261,7 +264,7 @@ public class EmploiScraper {
             return content;
         } catch (Exception e) {
             ScraperDebug.debugPrint("Error fetching post description.");
-            e.printStackTrace();
+            // e.printStackTrace();
             return "";
         }
     }
@@ -534,7 +537,7 @@ public class EmploiScraper {
             conn.close();
         } catch (Exception e) {
             ScraperDebug.debugPrint("Connection failed.");
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 
@@ -556,18 +559,11 @@ public class EmploiScraper {
                     failed++;
                     ScraperDebug.debugPrint("Insertion Error, num: "+counter+". " + e.getMessage());
                 }
-                /*if(this.listener != null){
-                    this.listener.updateCurrentStorage(counter);
-                }*/
             }
-
-            /*if(this.listener != null) {
-                this.listener.finishedMysqlStorage(success, failed);
-            }*/
             conn.close();
         } catch (Exception e) {
             ScraperDebug.debugPrint("Connection failed.");
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 

@@ -1,3 +1,7 @@
+package gui.machinelearning;
+
+import gui.visualization.Colors;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;

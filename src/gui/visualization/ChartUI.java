@@ -1,12 +1,16 @@
+package gui.visualization;
+
+import db.DBManager;
+import debug.ScraperDebug;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.*;
-import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.chart.axis.CategoryAxis;
 import org.jfree.chart.axis.CategoryLabelPositions;
+import org.jfree.chart.plot.*;
 import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.general.DefaultPieDataset;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -30,7 +34,7 @@ public class ChartUI extends JFrame {
         this.setTitle("Job Portal Scraper");
         this.setSize(1200, 1000);
         this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // change to dispose later on
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // change to dispose later on
         this.getContentPane().setLayout(new BorderLayout(0,0));
 
         /* header */
@@ -111,10 +115,8 @@ public class ChartUI extends JFrame {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
-
-
 
         JFreeChart chart = ChartFactory.createPieChart(
                 "Jop Posts Per City",
@@ -127,7 +129,7 @@ public class ChartUI extends JFrame {
         PiePlot plot = (PiePlot) chart.getPlot();
 
         int numberOfItems = dataset.getItemCount();
-        System.out.println(numberOfItems);
+        ScraperDebug.debugPrint("number of items = " + numberOfItems);
 
         int n = 0;
         while (n <= numberOfItems) {
@@ -158,7 +160,7 @@ public class ChartUI extends JFrame {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
 
         JFreeChart chart = ChartFactory.createBarChart(
@@ -202,7 +204,7 @@ public class ChartUI extends JFrame {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
 
         SpiderWebPlot plot = new SpiderWebPlot(dataset);
@@ -235,7 +237,7 @@ public class ChartUI extends JFrame {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
 
         RingPlot plot = new RingPlot(dataset);
@@ -244,7 +246,7 @@ public class ChartUI extends JFrame {
         plot.setSeparatorPaint(Color.WHITE); // Customize separator color
 
         int numberOfItems = dataset.getItemCount();
-        System.out.println(numberOfItems);
+        ScraperDebug.debugPrint("number of items: " + numberOfItems);
 
         int n = 0;
         while (n <= numberOfItems) {

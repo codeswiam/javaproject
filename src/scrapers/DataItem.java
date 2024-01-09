@@ -1,6 +1,9 @@
+package scrapers;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataItem {
     private String url;
@@ -256,28 +259,28 @@ public class DataItem {
         this.personalityTraits = personalityTraits;
     }
 
-    public ArrayList<String> getHardSkills() {
+    public List<String> getHardSkills() {
         return hardSkills;
     }
 
-    public void setHardSkills(ArrayList<String> hardSkills) {
-        this.hardSkills = hardSkills;
+    public void setHardSkills(List<String> hardSkills) {
+        this.hardSkills = (ArrayList<String>) hardSkills;
     }
 
-    public ArrayList<String> getSoftSkills() {
+    public List<String> getSoftSkills() {
         return softSkills;
     }
 
-    public void setSoftSkills(ArrayList<String> softSkills) {
-        this.softSkills = softSkills;
+    public void setSoftSkills(List<String> softSkills) {
+        this.softSkills = (ArrayList<String>) softSkills;
     }
 
-    public ArrayList<String> getRecommendedSkills() {
+    public List<String> getRecommendedSkills() {
         return recommendedSkills;
     }
 
-    public void setRecommendedSkills(ArrayList<String> recommendedSkills) {
-        this.recommendedSkills = recommendedSkills;
+    public void setRecommendedSkills(List<String> recommendedSkills) {
+        this.recommendedSkills = (ArrayList<String>) recommendedSkills;
     }
 
     public String getLanguage() {
@@ -322,7 +325,7 @@ public class DataItem {
 
     @Override
     public String toString() {
-        return "DataItem{" +
+        return "scrapers.DataItem{" +
                 "siteName='" + siteName + '\'' +
                 ", title='" + title + '\'' +
                 '}';

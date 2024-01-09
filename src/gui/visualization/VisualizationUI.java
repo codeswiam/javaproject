@@ -1,13 +1,20 @@
+package gui.visualization;
+
+import db.DBManager;
+import debug.ScraperDebug;
+import gui.machinelearning.ClassifierChoiceUI;
+import gui.machinelearning.ClusteringChoiceUI;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.plaf.basic.BasicTableHeaderUI;
 import javax.swing.table.JTableHeader;
-import java.sql.*;
+import java.awt.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 
 public class VisualizationUI extends JFrame {
@@ -24,11 +31,13 @@ public class VisualizationUI extends JFrame {
         SwingUtilities.invokeLater(VisualizationUI::new);
     }
     public VisualizationUI() {
+        String fontName = "Montseratt";
+        
         this.setResizable(false);
         this.setTitle("Job Portal Scraper");
         this.setSize(1500, 800);
         this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // change to dispose on close later on
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // change to dispose on close later on
         this.getContentPane().setLayout(new BorderLayout(0,0));
 
         /* header */
@@ -75,7 +84,7 @@ public class VisualizationUI extends JFrame {
         tableHeader.setPreferredSize(new Dimension(tableHeader.getWidth(), 30));
         tableHeader.setUI(new BasicTableHeaderUI());
         tableHeader.setBackground(Colors.brown);
-        tableHeader.setFont(new Font("Montseratt", Font.BOLD, 10));
+        tableHeader.setFont(new Font(fontName, Font.BOLD, 10));
         tableHeader.setForeground(Colors.white);
 
         JScrollPane scrollPane = new JScrollPane(jobsTable);
@@ -87,7 +96,6 @@ public class VisualizationUI extends JFrame {
         container.add(storingLabel, BorderLayout.CENTER);
 
         progressBar = new JProgressBar();
-        // progressBar.setStringPainted(true);
         container.add(progressBar, BorderLayout.SOUTH);
 
         // buttons
@@ -95,8 +103,9 @@ public class VisualizationUI extends JFrame {
         buttonsContainer.setBackground(Colors.white);
         containerContainer.add(buttonsContainer, BorderLayout.CENTER);
 
+        /*
         cleanData = new JButton("Clean Data");
-        cleanData.setFont(new Font("Montseratt", Font.BOLD, 15));
+        cleanData.setFont(new Font(fontName, Font.BOLD, 15));
         cleanData.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -104,52 +113,35 @@ public class VisualizationUI extends JFrame {
             }
         });
         cleanData.setForeground(Colors.brown);
-        buttonsContainer.add(cleanData);
+        buttonsContainer.add(cleanData);*/
 
         savetoDB = new JButton("Save to DataBase");
-        savetoDB.setFont(new Font("Montseratt", Font.BOLD, 15));
-        savetoDB.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                save();
-            }
-        });
+        savetoDB.setFont(new Font(fontName, Font.BOLD, 15));
+        savetoDB.addActionListener(e -> save());
         savetoDB.setForeground(Colors.brown);
         buttonsContainer.add(savetoDB);
 
         chartButton = new JButton("Visualize Charts");
-        chartButton.setFont(new Font("Montseratt", Font.BOLD, 15));
-        chartButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ChartUI();
-            }
-        });
+        chartButton.setFont(new Font(fontName, Font.BOLD, 15));
+        chartButton.addActionListener(e -> new ChartUI());
         chartButton.setForeground(Colors.brown);
         buttonsContainer.add(chartButton);
+
+        JLabel fillerLabel = new JLabel();
+        buttonsContainer.add(fillerLabel);
 
         // machine learning buttons
 
         classifierButton = new JButton("Classification");
-        classifierButton.setFont(new Font("Montseratt", Font.BOLD, 15));
-        classifierButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ClassifierChoiceUI();
-            }
-        });
+        classifierButton.setFont(new Font(fontName, Font.BOLD, 15));
+        classifierButton.addActionListener(e -> new ClassifierChoiceUI());
         classifierButton.setForeground(Colors.brown);
         classifierButton.setEnabled(false);
         buttonsContainer.add(classifierButton);
 
         clusteringButton = new JButton("Clustering");
-        clusteringButton.setFont(new Font("Montseratt", Font.BOLD, 15));
-        clusteringButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ClusteringChoiceUI();
-            }
-        });
+        clusteringButton.setFont(new Font(fontName, Font.BOLD, 15));
+        clusteringButton.addActionListener(e -> new ClusteringChoiceUI());
         clusteringButton.setForeground(Colors.brown);
         clusteringButton.setEnabled(false);
         buttonsContainer.add(clusteringButton);
@@ -167,7 +159,7 @@ public class VisualizationUI extends JFrame {
     public void save() {
         SwingWorker sw = new SwingWorker() {
             @Override
-            protected Object doInBackground() throws Exception {
+            protected Object doInBackground() {
                 savetoDB.setEnabled(false);
                 progressBar.setValue(0);
                 storingLabel.setText("Saving to Database: starting...\n");
@@ -183,16 +175,18 @@ public class VisualizationUI extends JFrame {
 
     public void storeAllPosts() {
         DBManager dbManager = DBManager.getInstance();
+        PreparedStatement selectStatement = null;
+        PreparedStatement insertStatement = null;
 
         try {
             Connection connection = dbManager.makeConnection();
 
             String selectQuery = "SELECT * FROM jobstemp";
-            PreparedStatement selectStatement = connection.prepareStatement(selectQuery);
+            selectStatement = connection.prepareStatement(selectQuery);
             ResultSet resultSet = selectStatement.executeQuery();
 
             String insertQuery = "INSERT INTO jobs VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            PreparedStatement insertStatement = connection.prepareStatement(insertQuery);
+            insertStatement = connection.prepareStatement(insertQuery);
 
             int count = 0;
 
@@ -231,7 +225,7 @@ public class VisualizationUI extends JFrame {
 
                 count++;
                 int progress = (int) ((double) count / numberOfPosts * 100);
-                System.out.println("numberOfPosts: "+numberOfPosts+", count: "+ count +", progress: ." + progress);
+                ScraperDebug.debugPrint("numberOfPosts: "+numberOfPosts+", count: "+ count +", progress: ." + progress);
                 updateProgressBar(progress);
             }
 
@@ -241,7 +235,7 @@ public class VisualizationUI extends JFrame {
             connection.close();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 

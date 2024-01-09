@@ -1,17 +1,21 @@
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import java.awt.*;
+package gui.machinelearning;
 
+import debug.ScraperDebug;
+import gui.visualization.Colors;
 import weka.clusterers.ClusterEvaluation;
 import weka.clusterers.Cobweb;
 import weka.clusterers.MakeDensityBasedClusterer;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 
-public class ClusteringUI extends JFrame {
-    public static JTextPane clusteringPane;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 
-    public void MakeDensityBasedClusterer() throws Exception {
+public class ClusteringUI extends JFrame {
+    public static final JTextPane clusteringPane = new JTextPane();
+
+    public void makeDensityBasedClusterer() throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource("data.arff");
         Instances data = source.getDataSet();
 
@@ -22,7 +26,7 @@ public class ClusteringUI extends JFrame {
         m.buildClusterer(data);
         evaluateModel(m, data);
     }
-    public void Cobweb() throws Exception {
+    public void cobweb() throws Exception {
         ConverterUtils.DataSource source = new ConverterUtils.DataSource("data.arff");
         Instances data = source.getDataSet();
 
@@ -53,16 +57,21 @@ public class ClusteringUI extends JFrame {
             eval.evaluateClusterer(data);
 
             // Print evaluation results
-            System.out.println("=== Cluster Evaluation ===");
-            System.out.println("Model: " + clusterer.getClass().getSimpleName());
-            System.out.println("Number of clusters: " + eval.getNumClusters());
-            System.out.println("Log-likelihood: " + eval.getLogLikelihood());
+
+            StringBuilder displayText = new StringBuilder();
+
+            displayText.append("=== Cluster Evaluation ===\n");
+            displayText.append("Model: " + clusterer.getClass().getSimpleName()+ "\n");
+            displayText.append("Number of clusters: " + eval.getNumClusters()+ "\n");
+            displayText.append("Log-likelihood: " + eval.getLogLikelihood()+ "\n");
 
             // Print detailed results
-            System.out.println("\n=== Cluster Results ===");
-            System.out.println(eval.clusterResultsToString());
+            displayText.append("\n=== Cluster Results ===\n");
+            displayText.append(eval.clusterResultsToString());
+
+            clusteringPane.setText(displayText.toString());
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
     }
     public static void evaluateModel(Cobweb clusterer, Instances data) {
@@ -74,17 +83,21 @@ public class ClusteringUI extends JFrame {
             // Evaluate the clusterer
             eval.evaluateClusterer(data);
 
+            StringBuilder displayText = new StringBuilder();
+
             // Print evaluation results
-            System.out.println("=== Cluster Evaluation ===");
-            System.out.println("Model: " + clusterer.getClass().getSimpleName());
-            System.out.println("Number of clusters: " + eval.getNumClusters());
-            System.out.println("Log-likelihood: " + eval.getLogLikelihood());
+            displayText.append("=== Cluster Evaluation ===\n");
+            displayText.append("Model: " + clusterer.getClass().getSimpleName()+ "\n");
+            displayText.append("Number of clusters: " + eval.getNumClusters()+ "\n");
+            displayText.append("Log-likelihood: " + eval.getLogLikelihood()+ "\n");
 
             // Print detailed results
-            System.out.println("\n=== Cluster Results ===");
-            System.out.println(eval.clusterResultsToString());
+            displayText.append("\n=== Cluster Results ===\n");
+            displayText.append(eval.clusterResultsToString()+ "\n");
+
+            clusteringPane.setText(displayText.toString());
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 
@@ -117,40 +130,31 @@ public class ClusteringUI extends JFrame {
         this.getContentPane().add(main, BorderLayout.CENTER);
 
 
-        JPanel classificationContainer = new JPanel();
-        classificationContainer.setBackground(Colors.white);
-        main.add(classificationContainer, BorderLayout.CENTER);
-        classificationContainer.setLayout(null);
+        JPanel clusteringContainer = new JPanel();
+        clusteringContainer.setBackground(Colors.white);
+        main.add(clusteringContainer, BorderLayout.CENTER);
+        clusteringContainer.setLayout(null);
 
         JScrollPane scrollPane = new JScrollPane();
         scrollPane.setBackground(Colors.white);
         scrollPane.setForeground(Colors.brown);
         scrollPane.setBounds(30, 20, 700, 250);
 
-        clusteringPane = new JTextPane();
         clusteringPane.setBackground(Colors.white);
         clusteringPane.setForeground(Colors.brown);
-        clusteringPane.setText("Classification...");
+        clusteringPane.setText("clustering...");
 
-        classificationContainer.add(clusteringPane);
+        clusteringContainer.add(clusteringPane);
         scrollPane.setViewportView(clusteringPane);
-        classificationContainer.add(scrollPane);
-
-        /*
-         * to display classification info in the text pane classificationPane
-         * use ClassificationUI.classificationPane.setText("string to be displayed");
-         * */
+        clusteringContainer.add(scrollPane);
 
         if (clusterer.equals("DensityBasedClusterer")) {
-            System.out.println("Density Based Clusterer");
-            MakeDensityBasedClusterer();
+            ScraperDebug.debugPrint("Density Based Clusterer");
+            makeDensityBasedClusterer();
         } else if (clusterer.equals("Cobweb")) {
-            System.out.println("Cobweb");
-            Cobweb();
-        } /*else {
-            System.out.println("Classifier FilteredClassifier");
-            FilteredClassifier();
-        }*/
+            ScraperDebug.debugPrint("Cobweb");
+            cobweb();
+        }
 
         /* footer */
         JPanel footer = new JPanel();

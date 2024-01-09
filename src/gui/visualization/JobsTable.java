@@ -1,3 +1,7 @@
+package gui.visualization;
+
+import db.DBManager;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
@@ -9,7 +13,7 @@ public class JobsTable extends JTable {
     private DBManager dbManager = DBManager.getInstance();
 
     public JobsTable() {
-        // dbManager = DBManager.getInstance();
+        // dbManager = db.DBManager.getInstance();
         DefaultTableModel tableModel = new DefaultTableModel();
         setModel(tableModel);
 
@@ -47,7 +51,7 @@ public class JobsTable extends JTable {
                 tableModel.addRow(rowData);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+           // e.printStackTrace();
         } finally {
             // Close JDBC resources
             try {
@@ -55,7 +59,7 @@ public class JobsTable extends JTable {
                 if (statement != null) statement.close();
                 if (connection != null) connection.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+              //  e.printStackTrace();
             }
         }
     }
@@ -63,7 +67,7 @@ public class JobsTable extends JTable {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             JFrame frame = new JFrame("Jobs Table Example");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
             JobsTable jobsTable = new JobsTable();
             JScrollPane scrollPane = new JScrollPane(jobsTable);

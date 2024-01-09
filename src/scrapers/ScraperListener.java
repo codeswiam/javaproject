@@ -1,3 +1,5 @@
+package scrapers;
+
 public interface ScraperListener {
     public void updateTotalPages(int pages);
     public void updateTotalPosts(int posts);

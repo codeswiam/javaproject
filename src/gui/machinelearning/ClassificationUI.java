@@ -1,7 +1,7 @@
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import java.awt.*;
+package gui.machinelearning;
 
+import debug.ScraperDebug;
+import gui.visualization.Colors;
 import weka.classifiers.Evaluation;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.classifiers.rules.ZeroR;
@@ -9,9 +9,13 @@ import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+
 public class ClassificationUI extends JFrame {
 
-    public static JTextPane classificationPane;
+    public static final JTextPane classificationPane = new JTextPane();
 
     public void j48(){
         try {
@@ -23,18 +27,13 @@ public class ClassificationUI extends JFrame {
             J48 j = new J48();
             j.buildClassifier(data);
 
-
             Evaluation eval = new Evaluation(data);
             eval.crossValidateModel(j, data, 10, new java.util.Random(1)); // 10-fold cross-validation
-
-            //System.out.println(eval.toSummaryString("\nResults\n======\n", false));
-            //System.out.println(eval.toClassDetailsString());
-            //System.out.println(eval.toMatrixString());
 
             evaluateModel(j,data);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
     public void zeroR(){
@@ -50,37 +49,30 @@ public class ClassificationUI extends JFrame {
             Evaluation eval = new Evaluation(data);
             eval.crossValidateModel(classifier, data, 10, new java.util.Random(1)); // 10-fold cross-validation
 
-            //System.out.println(eval.toSummaryString("\nResults\n======\n", false));
-            //System.out.println(eval.toClassDetailsString());
-            //System.out.println(eval.toMatrixString());
-
             evaluateModel(classifier,data);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
-    public void FilteredClassifier(){
+    public void filteredClassifier(){
         try {
             ConverterUtils.DataSource source = new ConverterUtils.DataSource("data.arff");
             Instances data = source.getDataSet();
 
             data.setClassIndex(data.numAttributes() -1);
 
-            FilteredClassifier F = new FilteredClassifier();
-            F.buildClassifier(data);
+            FilteredClassifier f = new FilteredClassifier();
+            f.buildClassifier(data);
 
 
             Evaluation eval = new Evaluation(data);
-            eval.crossValidateModel(F, data, 10, new java.util.Random(1)); // 10-fold cross-validation
+            eval.crossValidateModel(f, data, 10, new java.util.Random(1)); // 10-fold cross-validation
 
-            //System.out.println(eval.toSummaryString("\nResults\n======\n", false));
-            //System.out.println(eval.toClassDetailsString());
-            //System.out.println(eval.toMatrixString());
-            evaluateModel(F,data);
+            evaluateModel(f,data);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 
@@ -88,17 +80,7 @@ public class ClassificationUI extends JFrame {
         // Evaluate model
         Evaluation evaluation = new Evaluation(testData);
         evaluation.evaluateModel(model, testData);
-        System.out.println("Model: " + model.getClass().getSimpleName());
-        System.out.println("Accuracy: " + evaluation.pctCorrect());
-        System.out.println("Precision: " + evaluation.weightedPrecision());
-        System.out.println("Recall: " + evaluation.weightedRecall());
-        System.out.println("F1 Score: " + evaluation.weightedFMeasure());
-        System.out.println("AUC-ROC: " + evaluation.areaUnderROC(0));
 
-        System.out.println(evaluation.toMatrixString()); //Confusion Matrix
-        System.out.println( evaluation.toClassDetailsString()); //Detailed Accuracy By Class
-        System.out.println(evaluation.toSummaryString()); //Summary
-        System.out.println("=======================\n");
         // Print results
         StringBuilder displayText = new StringBuilder();
 
@@ -155,7 +137,6 @@ public class ClassificationUI extends JFrame {
         scrollPane.setForeground(Colors.brown);
         scrollPane.setBounds(30, 20, 700, 250);
 
-        classificationPane = new JTextPane();
         classificationPane.setBackground(Colors.white);
         classificationPane.setForeground(Colors.brown);
         classificationPane.setText("Classification...");
@@ -164,20 +145,15 @@ public class ClassificationUI extends JFrame {
         scrollPane.setViewportView(classificationPane);
         classificationContainer.add(scrollPane);
 
-        /*
-         * to display classification info in the text pane classificationPane
-         * use ClassificationUI.classificationPane.setText("string to be displayed");
-         * */
-
         if (classifier.equals("zeroR")) {
-            System.out.println("Classifier zeroR");
+            ScraperDebug.debugPrint("Classifier zeroR");
             zeroR();
         } else if (classifier.equals("j48")) {
-            System.out.println("Classifier j48");
+            ScraperDebug.debugPrint("Classifier j48");
             j48();
         } else {
-            System.out.println("Classifier FilteredClassifier");
-            FilteredClassifier();
+            ScraperDebug.debugPrint("Classifier FilteredClassifier");
+            filteredClassifier();
         }
 
         /* footer */

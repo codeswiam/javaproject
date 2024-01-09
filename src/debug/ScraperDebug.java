@@ -1,4 +1,4 @@
-// this class helps us only print some messages when debug mode is on
+package debug;
 
 public class ScraperDebug {
     public static boolean debug = false;

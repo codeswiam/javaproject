@@ -1,8 +1,10 @@
+package gui.machinelearning;
+
+import gui.visualization.Colors;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ClassifierChoiceUI extends JFrame {
 
@@ -41,30 +43,17 @@ public class ClassifierChoiceUI extends JFrame {
         classifier.setModel(new DefaultComboBoxModel<>(new String[] {"zeroR", "j48", "FilteredClassifier"}));
         main.add(classifier, BorderLayout.CENTER);
 
-        /*
-        JPanel classificationContainer = new JPanel();
-        classificationContainer.setBackground(Colors.white);
-        // main.add(classificationContainer, BorderLayout.CENTER);
-        classificationContainer.setLayout(null);
-         */
-
         /* footer */
         JPanel footer = new JPanel();
         footer.setBackground(Colors.green);
         footer.setBorder(new EmptyBorder(10, 10, 10, 10));
-        // footer.setLayout(new BorderLayout());
         this.getContentPane().add(footer, BorderLayout.SOUTH);
 
         JButton button = new JButton("Start Classification");
         button.setFont(new Font("Montseratt", Font.BOLD, 15));
         button.setForeground(Colors.green);
 
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new ClassificationUI(classifier.getSelectedItem().toString());
-            }
-        });
+        button.addActionListener(e -> new ClassificationUI(classifier.getSelectedItem().toString()));
         footer.add(button);
 
         this.setVisible(true);

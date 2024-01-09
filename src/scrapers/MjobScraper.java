@@ -1,12 +1,16 @@
+package scrapers;
+
+import db.DBManager;
+import debug.ScraperDebug;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
-
-import org.jsoup.nodes.Document;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 public class MjobScraper {
     protected DBManager dbManager = DBManager.getInstance();
@@ -28,7 +32,7 @@ public class MjobScraper {
             Document document = Jsoup.connect(url).get();
             return document.title();
         } catch (IOException e) {
-            e.printStackTrace();
+           // e.printStackTrace();
             return null;
         }
     }
@@ -65,7 +69,7 @@ public class MjobScraper {
             }
             totalPages = currentPage;
         } catch (IOException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
         return totalPages;
     }
@@ -103,7 +107,7 @@ public class MjobScraper {
 
             }
         } catch (Exception e) {
-            e.printStackTrace();
+           // e.printStackTrace();
         }
     }
 
@@ -337,7 +341,7 @@ public class MjobScraper {
             conn.close();
         } catch (Exception e) {
             ScraperDebug.debugPrint("Connection failed.");
-            e.printStackTrace();
+           // e.printStackTrace();
         }
     }
 
@@ -359,24 +363,30 @@ public class MjobScraper {
                     failed++;
                     ScraperDebug.debugPrint("Insertion Error, num: "+counter+". " + e.getMessage());
                 }
-                /*if(this.listener != null){
-                    this.listener.updateCurrentStorage(counter);
-                }*/
             }
-
-            /*if(this.listener != null) {
-                this.listener.finishedMysqlStorage(success, failed);
-            }*/
             conn.close();
         } catch (Exception e) {
             ScraperDebug.debugPrint("Connection failed.");
-            e.printStackTrace();
+           // e.printStackTrace();
         }
     }
 
 
+    public int getPagesNumber() {
+        return pagesNumber;
+    }
 
+    public ArrayList<String> getPagesUrl() {
+        return pagesUrl;
+    }
 
+    public ArrayList<String> getPostsUrl() {
+        return postsUrl;
+    }
+
+    public ArrayList<DataItem> getPosts() {
+        return posts;
+    }
 }
 
 

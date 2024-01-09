@@ -1,3 +1,7 @@
+package db;
+
+import debug.ScraperDebug;
+
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,8 +20,7 @@ public class DBManager {
     }
 
     public Connection makeConnection() throws SQLException {
-        Connection conn = DriverManager.getConnection(this.connectionUrl, this.dbUsername, this.dbPassword);
-        return conn;
+        return DriverManager.getConnection(this.connectionUrl, this.dbUsername, this.dbPassword);
     }
 
     protected String configFilePath;
@@ -43,10 +46,11 @@ public class DBManager {
     }
 
     protected void loadDatabaseConfig() {
+        Scanner reader = null;
         try {
             File config = new File(this.configFilePath);
             ScraperDebug.debugPrint(config.getAbsolutePath());
-            Scanner reader = new Scanner(config);
+            reader = new Scanner(config);
             while(reader.hasNextLine()) {
                 String line = reader.nextLine();
                 if(line.contains("db_name")) {
@@ -68,7 +72,7 @@ public class DBManager {
             }
         } catch (Exception e) {
             ScraperDebug.debugPrint(e.getMessage());
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
     }

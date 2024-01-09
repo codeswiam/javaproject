@@ -1,16 +1,25 @@
+package gui;
+
+import db.DBManager;
+import debug.ScraperDebug;
+import gui.visualization.Colors;
+import gui.visualization.VisualizationUI;
+import scrapers.EmploiScraper;
+import scrapers.MjobScraper;
+import scrapers.RekruteScraper;
+import scrapers.ScraperListener;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.sql.SQLException;
-import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
 
 public class JobPortalScraperUI extends JFrame {
     private static final DBManager dbManager = DBManager.getInstance();
-    public static JButton scrapeButton;
+    public static final JButton scrapeButton = new JButton("SCRAPE");
     protected EmploiScraper emploiScraper;
     protected RekruteScraper rekruteScraper;
     protected MjobScraper mjobScraper;
@@ -28,13 +37,13 @@ public class JobPortalScraperUI extends JFrame {
             @Override
             public void updateTotalPages(int pages) {
                 logsLabel.setText("Number of pages found: " + pages);
-                System.out.println("Number of pages found: " + pages);
+                ScraperDebug.debugPrint("Number of pages found: " + pages);
             }
 
             @Override
             public void updateTotalPosts(int posts) {
                 logsLabel.setText("Number of posts found: " + posts);
-                System.out.println("Number of posts found: " + posts);
+                ScraperDebug.debugPrint("Number of posts found: " + posts);
                 total = Math.min(posts, EmploiScraper.maxPostsToScrape);
             }
 
@@ -43,7 +52,7 @@ public class JobPortalScraperUI extends JFrame {
                 int progress = (post * 100) / total;
                 logsLabel.setText("Scraping "+progress+"%.");
                 progressBar.setValue(progress);
-                System.out.println("Scraping "+progress+"% : " + url);
+                ScraperDebug.debugPrint("Scraping "+progress+"% : " + url);
             }
 
             @Override
@@ -51,7 +60,7 @@ public class JobPortalScraperUI extends JFrame {
                 int progress = (current * 100) / total;
                 logsLabel.setText("Storing "+progress+"%.");
                 progressBar.setValue(progress);
-                System.out.println("Storing "+progress+"%.");
+                ScraperDebug.debugPrint("Storing "+progress+"%.");
             }
 
             @Override
@@ -63,7 +72,7 @@ public class JobPortalScraperUI extends JFrame {
         emploiScraper = new EmploiScraper();
         emploiScraper.setListener(scraperListener);
         /*
-        emploiScraper.setListener(new ScraperListener() {
+        emploiScraper.setListener(new scrapers.ScraperListener() {
             @Override
             public void updateTotalPages(int pages) {
                 // logsLabel.setText("Number of pages found: " + pages);
@@ -76,7 +85,7 @@ public class JobPortalScraperUI extends JFrame {
                 // logsLabel.setText("Number of posts found: " + posts);
                 System.out.println("Number of posts found: " + posts);
                 // logsPane.setText(logsPane.getText() + "Number of posts found: " + posts + "\n");
-                total = Math.min(posts, EmploiScraper.maxPostsToScrape);
+                total = Math.min(posts, scrapers.EmploiScraper.maxPostsToScrape);
             }
 
             @Override
@@ -108,7 +117,7 @@ public class JobPortalScraperUI extends JFrame {
         rekruteScraper = new RekruteScraper();
         rekruteScraper.setListener(scraperListener);
         /*
-        rekruteScraper.setListener(new ScraperListener() {
+        rekruteScraper.setListener(new scrapers.ScraperListener() {
             @Override
             public void updateTotalPages(int pages) {
                 // logsLabel.setText("Number of pages found: " + pages);
@@ -121,7 +130,7 @@ public class JobPortalScraperUI extends JFrame {
                 // logsLabel.setText("Number of posts found: " + posts);
                 System.out.println("Number of posts found: " + posts);
                 // logsPane.setText(logsPane.getText() + "Number of posts found: " + posts + "\n");
-                total = Math.min(posts, EmploiScraper.maxPostsToScrape);
+                total = Math.min(posts, scrapers.EmploiScraper.maxPostsToScrape);
             }
 
             @Override
@@ -153,7 +162,7 @@ public class JobPortalScraperUI extends JFrame {
         mjobScraper = new MjobScraper();
         mjobScraper.setListener(scraperListener);
         /*
-        mjobScraper.setListener(new ScraperListener() {
+        mjobScraper.setListener(new scrapers.ScraperListener() {
             @Override
             public void updateTotalPages(int pages) {
                 // logsLabel.setText("Number of pages found: " + pages);
@@ -265,16 +274,10 @@ public class JobPortalScraperUI extends JFrame {
         JLabel fillerLabel5 = new JLabel();
         buttonPanel.add(fillerLabel5);
 
-        scrapeButton = new JButton("SCRAPE");
         scrapeButton.setFont(new Font("Montseratt", Font.BOLD, 15));
         scrapeButton.setForeground(Colors.blue);
 
-        scrapeButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                scrape();
-            }
-        });
+        scrapeButton.addActionListener(e -> scrape());
         buttonPanel.add(scrapeButton);
 
         JLabel fillerLabel6 = new JLabel();
@@ -313,22 +316,6 @@ public class JobPortalScraperUI extends JFrame {
 
         JLabel fillerLabel4 = new JLabel();
         scpContainer.add(fillerLabel4);
-
-        /*
-        JScrollPane logsScrollPane = new JScrollPane();
-        logsScrollPane.setBackground(Colors.white);
-        logsScrollPane.setForeground(Colors.brown);
-        logsScrollPane.setBounds(0, 60, 700, 300);
-
-        logsPane = new JTextPane();
-        logsPane.setBackground(Colors.white);
-        logsPane.setForeground(Colors.brown);
-        logsPane.setText("Select a Website to start scraping...");
-
-        scrapingContainer.add(logsPane);
-        logsScrollPane.setViewportView(logsPane);
-        scrapingContainer.add(logsScrollPane);
-         */
         
         /* footer */
         JPanel footer = new JPanel();
@@ -357,11 +344,9 @@ public class JobPortalScraperUI extends JFrame {
     public void scrape() {
         SwingWorker sw = new SwingWorker() {
             @Override
-            protected Object doInBackground() throws Exception {
+            protected Object doInBackground() {
                 // stopping the user from pressing the save and scrape buttons while scraping
-                // savetoDB.setEnabled(false);
                 scrapeButton.setEnabled(false);
-                // logsPane.setText("Scraping: starting...\n");
 
                 truncateTable("jobstemp");
                 truncateTable("jobs");
@@ -372,7 +357,7 @@ public class JobPortalScraperUI extends JFrame {
                     progressBar.setValue(0);
                     logsLabel.setText("Scraping: 0%.");
                     if (item.equals("Rekrute.ma")) {
-                        System.out.println("Scraping Rekrute.ma");
+                        ScraperDebug.debugPrint("Scraping Rekrute.ma");
                         rekruteScraper.fetchPageNumber();
                         rekruteScraper.fetchPagesUrls();
                         rekruteScraper.fetchAllPostsUrl();
@@ -380,7 +365,7 @@ public class JobPortalScraperUI extends JFrame {
                         rekruteScraper.tempStoreAllPosts();
                     }
                     if (item.equals("Emploi.ma")) {
-                        System.out.println("Scraping Emploi.ma");
+                        ScraperDebug.debugPrint("Scraping Emploi.ma");
                         emploiScraper.fetchPageNumber();
                         emploiScraper.fetchPagesUrls();
                         emploiScraper.fetchAllPostsUrl();
@@ -388,7 +373,7 @@ public class JobPortalScraperUI extends JFrame {
                         emploiScraper.tempStoreAllPosts();
                     }
                     if (item.equals("M-job.ma")) {
-                        System.out.println("Scraping M-job.ma");
+                        ScraperDebug.debugPrint("Scraping M-job.ma");
                         mjobScraper.fetchPageNumber();
                         mjobScraper.fetchPagesUrls();
                         mjobScraper.fetchAllPostsUrl();
@@ -422,10 +407,10 @@ public class JobPortalScraperUI extends JFrame {
             String truncateQuery = "TRUNCATE TABLE " + tableName;
             try (PreparedStatement statement = connection.prepareStatement(truncateQuery)) {
                 statement.executeUpdate();
-                System.out.println("Table " + tableName + " truncated successfully.");
+                ScraperDebug.debugPrint("Table " + tableName + " truncated successfully.");
             }
         } catch (SQLException e) {
-            System.err.println("Error truncating table " + tableName + ": " + e.getMessage());
+            ScraperDebug.debugPrint("Error truncating table " + tableName + ": " + e.getMessage());
         }
     }
 }
