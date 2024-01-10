@@ -74,7 +74,6 @@ public class Authentification extends JFrame {
 
                 if (authenticateUser(username, password)) {
                     new JobPortalScraperUI();
-
                 } else {
                     JOptionPane.showMessageDialog(Authentification.this, "Invalid Username or Password", "Error", JOptionPane.ERROR_MESSAGE);
                 }

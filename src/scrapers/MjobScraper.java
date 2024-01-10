@@ -25,7 +25,7 @@ public class MjobScraper {
 
     protected ArrayList<DataItem> posts = new ArrayList<>();
     public static int maxPageToScrape = 4; // change back to 4 // or maybe make it 30
-    public static int maxPostsToScrape = 25; // change to 1000 later on
+    public static int maxPostsToScrape = 50; // change to 1000 later on
     protected ScraperListener listener = null;
     public static String scrapeTitle(String url) {
         try {

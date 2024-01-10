@@ -235,7 +235,7 @@ public class VisualizationUI extends JFrame {
             connection.close();
 
         } catch (SQLException e) {
-            // e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
