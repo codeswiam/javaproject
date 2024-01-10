@@ -10,6 +10,7 @@ import org.jsoup.select.Elements;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,8 +24,8 @@ public class RekruteScraper {
     protected ArrayList<String> pagesUrl = new ArrayList<>();
     protected  ArrayList<String> postsUrl = new ArrayList<>();
     protected ArrayList<DataItem> posts = new ArrayList<>();
-    protected int maxPageToScrape = 1; // change back to 4 // or maybe make it 30
-    protected int maxPostsToScrape = 10; // change to 1000 later on
+    public static int maxPageToScrape = 1; // change back to 4 // or maybe make it 30
+    public static int maxPostsToScrape = 5; // change to 1000 later on
     protected ScraperListener listener = null;
 
     List<String> specificWords = Arrays.asList("java", "C#", "C++","python","php","C","django","laravel","DevOps","dataviz","Paas","Spring","Hibernate","SQL","Angular","Javascript","HTML","CSS","JS","Maven", "Jenkins", "Sonar", "Soap UI", "Postman", "Ansible","Git","IHM","API","pipelines CI/CD","Linux","Docker","XML","JSON");
@@ -207,7 +208,11 @@ public class RekruteScraper {
                     .replace(" sur ReKrute.com", "")
                     .trim();
             if (content.equals("aujourd'hui")){
-                content = String.valueOf(LocalDate.now());
+                LocalDate currentDate = LocalDate.now();
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                String formattedDate = currentDate.format(formatter);
+                System.out.println(formattedDate);
+                content = formattedDate;
             }
             ScraperDebug.debugPrint("Publish date: " + content);
             return content;
@@ -421,11 +426,12 @@ public class RekruteScraper {
                     List<String> result = new ArrayList<>();
                     for (Element liElement : liElements) {
                         result = extractMatchingWords(liElement.text().toLowerCase(), specificWords);
-                        ScraperDebug.debugPrint("liElemnent= " + liElement);
+                        System.out.println(liElement);
                         if(!result.isEmpty() && !hardSkills.contains(result)){
                             // Display the extracted words
-                            ScraperDebug.debugPrint("Extracted Words: " + result);
-                            hardSkills.addAll(result);}
+                            System.out.println("Extracted Words: " + result);
+                            for(int i=0;i<result.size();i++){
+                                hardSkills.add(result.get(i));}}
                     }
 
                     // Convert hardSkills to a Set to remove duplicates
@@ -441,7 +447,7 @@ public class RekruteScraper {
             }
 
         } catch (Exception e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             ScraperDebug.debugPrint("Error fetching Hard Skills");
             return new ArrayList<>();
         }
@@ -599,6 +605,21 @@ public class RekruteScraper {
         } catch (Exception e) {
             ScraperDebug.debugPrint("Connection failed.");
         }
+    }
+    public ArrayList<DataItem> getPosts() {
+        return posts;
+    }
+
+    public int getPagesNumber() {
+        return pagesNumber;
+    }
+
+    public ArrayList<String> getPagesUrl() {
+        return pagesUrl;
+    }
+
+    public ArrayList<String> getPostsUrl() {
+        return postsUrl;
     }
 }
 

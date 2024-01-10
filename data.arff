@@ -1,0 +1,616 @@
+@relation 'jobstemp (3)-weka.filters.unsupervised.attribute.Remove-R1,2,3,7,8,9,10,11,15,20,21,22,23,24,25,26,27,28'
+
+@attribute publish_date {10/01/2024,'il y a 2 jours','il y a 5 jours','il y a 6 jours','il y a 7 jours','il y a 8 jours','il y a 13 jours','il y a 14 jours','il y a 15 jours','il y a 16 jours','il y a 18 jours','il y a 19 jours','il y a 20 jours','il y a 21 jours','il y a 22 jours','il y a 23 jours','il y a 26 jours','il y a 27 jours','il y a 28 jours','il y a 29 jours','il y a 30 jours','il y a 33 jours','il y a 34 jours','il y a 35 jours','il y a 36 jours','il y a 37 jours','il y a 40 jours','il y a 41 jours','il y a 42 jours','il y a 43 jours','il y a 44 jours','il y a 46 jours','il y a 47 jours','il y a 48 jours','il y a 49 jours','il y a 50 jours','il y a 51 jours','il y a 54 jours','il y a 55 jours','il y a 56 jours','il y a 57 jours','il y a 58 jours','il y a 61 jours','il y a 119 jours','il y a 25 minutes','il y a 26 minutes','il y a 18 heures','il y a 19 heures','il y a 22 heures','il y a 1 jour','il y a 4 jours','il y a 1 semaine','il y a 2 semaines','il y a 3 semaines','il y a 4 semaines','il y a 1 mois'}
+@attribute apply_date {09/03/2024,26/02/2024,08/03/2024,28/02/2024,18/02/2024,07/02/2024,16/01/2024,05/02/2024,05/03/2024,04/03/2024,03/03/2024,06/02/2024,02/03/2024,22/02/2024,14/02/2024,28/01/2024,21/02/2024,27/02/2024,30/01/2024,13/01/2024,20/01/2024,31/10/2024,25/02/2024,17/01/2024,21/01/2024,22/01/2024,15/01/2024,20/02/2024,01/02/2024,11/02/2024,19/02/2024,15/02/2024,23/01/2024,29/01/2024,13/02/2024,12/02/2024,08/02/2024,04/02/2024,27/01/2024,25/01/2024,24/01/2024,10/01/2024,14/01/2024,13/11/2030}
+@attribute company_name {'intelcia its','orange business',null,tersea,'oceane consulting it maroc','société générale maroc',altados,welink,'excel management conseil','webhelp maroc','cnexia tech','cgi technologies et solutions maroc','giz maroc',hcltech,'alten maroc','eca assurances','yazaki morocco','bouygues construction it','orh assessment','dxc technology maroc','euro information direct service','leet initiative','aria tech',capgemini,'bank assafa','emirates airlines','université internationale de rabat (uir)','um6p - université mohammed vi polytechnique','deloitte extended services','groupe afma',atlanse,'econocom maroc','sofrecom maroc','université euro-méditerranéenne de fès',bricoma,'manpower agences','colibri services','axa rabat (axa services)',intelcia,innovx,'ipanema consulting','akkodis maroc','axa group operations maroc',ingenius,'sopra steria spain',ciprotec,'air arabia','eczacibasi (ecp maroc)','y stratégie','excellium carrières',e-medias,'si claire','univers rh groupe omf','job developpement','ms project & developpement',ttam,'cpa cs','cpa maroc','les mandarins maroc','skynet alliances','axelliances consulting',msb,'oxo . com','direct performance','czar groupe','lmh call','kocc médias',werecrut,'dubos isabelle forever','celyins assurances','elsayed service',foxassursuccursale,'co managers','réseau guide emploi','phenix assurances',eigenvalue,'le call','ipsum consulting services','net courtage assurance','atires partners','2ca business','golden gate group',profficiis,'ag solutions','ads glory','concept assur',here2help,addwork,'ste anonyme','hnbc groupe succursale','sync team',prevas,'ensure call','speed tarif',allowin,'pcs assure',gwm,terrain360,'ecs informatique',anonyme,aksam,'recrut call','atlantic talent','master kids','top class espresso',idc,'elc assurances group','2 ya tek service',copmart,'ferja assur','eids maroc',maroskin,sgm2i,'m2k sourcing','zenith assurance maroc','arcanes technologies','vita way','haya assurances','sehi maroc',assurance,'consilium recrutement',marocadre,itfacto,'expert business unit','inter courtage','mh group',plfsarl,cbo,clientmarketing,careersinmorocco}
+@attribute city {rabat,casablanca,le,kénitra,marrakech,autres,fès,tanger,'casablanca / marrakech','rabat / salé / kenitra / temara / casablanca / mohammedia',meknes,mohammedia,'fes / rabat / casablanca','meknes / fes / marrakech / agadir','casablanca / mohammedia','rabat / casablanca','rabat / salé / kenitra / temara / mohammedia',kenitra,'meknes / fes / tanger / tetouan / oujda / nador / berkane / taza / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / el jadida / marrakech / safi / agadir / laâyoune','fes / marrakech / agadir','rabat / salé / temara / casablanca / mohammedia','rabat / salé / marrakech','meknes / fes / tanger / oujda / taza / ifrane / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / bouskoura / el jadida / azemmour / bouznika / marrakech / safi / agadir',salé,'meknes / fes / rabat / salé / kenitra','rabat / salé / kenitra / temara / casablanca / mohammedia / bouznika',agadir,'rabat / salé / kenitra / temara','fes / tanger / tetouan / oujda / nador / rabat / casablanca / marrakech / agadir','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech',temara,'rabat / kenitra / temara / casablanca','meknes / fes / rabat / salé / kenitra / temara / casablanca / mohammedia / el jadida / marrakech',fes,berrechid,'meknes / fes / salé / kenitra'}
+@attribute region {maroc,'émirats arabes unis',france,espagne,marrakech,'casablanca / marrakech',rabat,casablanca,'rabat / salé / kenitra / temara / casablanca / mohammedia',meknes,mohammedia,'fes / rabat / casablanca','meknes / fes / marrakech / agadir','casablanca / mohammedia',tanger,'rabat / casablanca','rabat / salé / kenitra / temara / mohammedia',kenitra,'meknes / fes / tanger / tetouan / oujda / nador / berkane / taza / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / el jadida / marrakech / safi / agadir / laâyoune','fes / marrakech / agadir','rabat / salé / temara / casablanca / mohammedia','rabat / salé / marrakech','meknes / fes / tanger / oujda / taza / ifrane / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / bouskoura / el jadida / azemmour / bouznika / marrakech / safi / agadir',salé,'meknes / fes / rabat / salé / kenitra','rabat / salé / kenitra / temara / casablanca / mohammedia / bouznika',agadir,'rabat / salé / kenitra / temara','fes / tanger / tetouan / oujda / nador / rabat / casablanca / marrakech / agadir','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech',temara,'rabat / kenitra / temara / casablanca','meknes / fes / rabat / salé / kenitra / temara / casablanca / mohammedia / el jadida / marrakech',fes,berrechid,'meknes / fes / salé / kenitra'}
+@attribute sector {'informatique / electronique - secteur informatique','informatique / electronique - télécoms / réseaux - secteur informatique - telecom','informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia','informatique / electronique - secteur informatique -','informatique / electronique - secteur banque / finance - informatique','informatique / electronique - secteur banque / finance','informatique / electronique - télécoms / réseaux - secteur banque / finance - informatique','informatique / electronique - secteur informatique - telecom','informatique / electronique - secteur telecom','informatique / electronique - télécoms / réseaux - secteur banque / finance -','informatique / electronique - multimédia / internet - secteur banque / finance - informatique','informatique / electronique - télécoms / réseaux - secteur informatique','informatique / electronique - secteur informatique - internet / multimédia','informatique / electronique - multimédia / internet - secteur conseil / etudes - service public / administration','informatique / electronique - multimédia / internet - secteur banque / finance','informatique / electronique - multimédia / internet - secteur informatique','informatique / electronique - multimédia / internet - secteur informatique -','informatique / electronique - secteur assurance / courtage - autres services','informatique / electronique - secteur telecom -','informatique / electronique - banque (métiers de la) - secteur banque / finance','informatique / electronique - multimédia / internet - secteur automobile / motos / cycles -','informatique / electronique - secteur informatique - service public / administration','informatique / electronique - multimédia / internet - secteur offshoring / nearshoring','informatique / electronique - multimédia / internet - secteur centre d appel - informatique','informatique / electronique - secteur enseignement / formation -','informatique / electronique - gestion projet / etudes / r&d - secteur informatique -','informatique / electronique - multimédia / internet - secteur informatique - offshoring / nearshoring','informatique / electronique - secteur autres services - banque / finance','informatique / electronique - gestion projet / etudes / r&d - secteur agriculture / environnement -','informatique / electronique - secteur enseignement / formation','informatique / electronique - télécoms / réseaux - secteur informatique -','informatique / electronique - secteur internet / multimédia','informatique / electronique - secteur internet / multimédia -','informatique / electronique - multimédia / internet - secteur agence pub / marketing direct - enseignement / formation','informatique / electronique - télécoms / réseaux - secteur audiovisuel - informatique','informatique / electronique - télécoms / réseaux - secteur distribution - ameublement / décoration','informatique / electronique - multimédia / internet - secteur autres industries','informatique / electronique - secteur automobile / motos / cycles','informatique / electronique - secteur informatique - autres services','informatique / electronique - multimédia / internet - secteur enseignement / formation','informatique / electronique - secteur immobilier / promoteur / agence','informatique / electronique - secteur conseil / etudes','informatique / electronique - secteur centre d appel','informatique / electronique - secteur energie -','informatique / electronique - secteur electronique -','informatique / electronique - télécoms / réseaux - secteur agriculture / environnement -','informatique / electronique - télécoms / réseaux - secteur informatique - internet / multimédia','informatique / electronique - call centers (métiers de) - secteur informatique -','informatique / electronique - secteur autres industries - informatique','informatique / electronique - marketing - secteur distribution - autres industries','informatique / electronique - banque (métiers de la) - secteur informatique -','informatique / electronique - multimédia / internet - secteur informatique - telecom','informatique / electronique - télécoms / réseaux - secteur energie -','informatique / electronique - secteur distribution - autres industries','informatique / electronique - commercial / vente / export - secteur recrutement / intérim -','centres d appels',autres,'transport / manutention / logistique',assurance,'comptabilité / gestion / audit','education / enseignement / formation','franchise / santé','informatique / internet / multimedia','grande distribution','industrie alimentaire / agroalimentaire','centres d appels / conseil / consulting / assurance / santé / télécommunications',télécommunications,'banque / organisme financier','banque / organisme financier / centres d appels / conseil / consulting / assurance','industrie métallurgique','tourisme / hôtellerie / restauration','recrutement / intérim','centres d appels / assurance','conseil / consulting','publicité / communication','industrie automobile',franchise,'industrie textile'}
+@attribute contract_type {cdi,freelance,cdd,autre,stage,'free lance','cdi / cdd / free lance','cdd / free lance / intérim / lettre d engagement','cdi / free lance','lettre d engagement','cdi / cdd / free lance / intérim / lettre d engagement',intérim,'cdi / cdd'}
+@attribute education_level {'bac +5 et plus minimum','bac +5 et plus','bac +3 minimum','bac +2 minimum','bac +3','bac +4 minimum','autodidacte minimum','bac +5 et plus maximum','bac +3 maximum',bac+2,français,'bac+5 et plus',bac+3,'bac+2 / bac+3',bac,'bac / bac+1 / bac+2','bac / bac+1 / bac+2 / bac+3 / bac+4','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins','bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus',bac+1,'bac / bac+1 / bac+2 / bac+3',bac+4,'bac / bac+1','bac+3 / bac+4 / bac+5 et plus',anglais,'bac+1 / bac+2 / bac+3 / bac+4'}
+@attribute diploma {null,master,'ecole d ingénieur','formation spécialisée',autre,université,'doctorat / dea','bts / dut','formation professionnelle',bac+2,français,'bac+5 et plus',bac+3,'bac+2 / bac+3',bac,'bac / bac+1 / bac+2','bac / bac+1 / bac+2 / bac+3 / bac+4','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins','bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus',bac+1,'bac / bac+1 / bac+2 / bac+3',bac+4,'bac / bac+1','bac+3 / bac+4 / bac+5 et plus',anglais,'bac+1 / bac+2 / bac+3 / bac+4'}
+@attribute experience {null,'de 5 à 10 ans','de 10 à 20 ans','de 3 à 5 ans','de 1 à 3 ans','moins de 1 an','débutant (de 1 à 3 ans)','junior (de 3 à 5 ans)','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans','senior (de 5 à 7 ans)','fraichement diplômé / débutant (de 1 à 3 ans)','fraichement diplômé','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)','junior (de 3 à 5 ans) / senior (de 5 à 7 ans)','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)','confirmé (de 7 à 10 ans)','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)'}
+@attribute remote {non,hybride,'oui 100\%'}
+
+@data
+10/01/2024,09/03/2024,'intelcia its',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+10/01/2024,09/03/2024,'orange business',rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +5 et plus minimum',null,null,hybride
+10/01/2024,09/03/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',hybride
+10/01/2024,09/03/2024,tersea,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,'de 5 à 10 ans',non
+10/01/2024,09/03/2024,'oceane consulting it maroc',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+10/01/2024,09/03/2024,'société générale maroc',casablanca,maroc,'informatique / electronique - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',master,null,non
+10/01/2024,09/03/2024,altados,casablanca,maroc,'informatique / electronique - secteur banque / finance',cdi,'bac +5 et plus minimum',null,null,non
+10/01/2024,09/03/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',master,null,non
+10/01/2024,09/03/2024,welink,le,maroc,'informatique / electronique - secteur informatique - telecom',freelance,'bac +5 et plus minimum','ecole d ingénieur',null,'oui 100\%'
+10/01/2024,09/03/2024,'excel management conseil',rabat,maroc,'informatique / electronique - secteur telecom',cdi,'bac +5 et plus','ecole d ingénieur',null,non
+'il y a 2 jours',26/02/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur banque / finance -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 2 jours',26/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdd,'bac +5 et plus minimum',master,null,hybride
+'il y a 2 jours',26/02/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 2 jours',08/03/2024,'oceane consulting it maroc',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 2 jours',08/03/2024,'webhelp maroc',casablanca,maroc,'informatique / electronique - secteur informatique - telecom',cdi,'bac +3 minimum',null,null,non
+'il y a 2 jours',08/03/2024,'cnexia tech',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,'oui 100\%'
+'il y a 2 jours',08/03/2024,'cgi technologies et solutions maroc',rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique',cdi,'bac +5 et plus',null,'de 5 à 10 ans',non
+'il y a 2 jours',08/03/2024,'cgi technologies et solutions maroc',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 2 jours',28/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 2 jours',08/03/2024,'cgi technologies et solutions maroc',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 2 jours',18/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 2 jours',18/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 2 jours',18/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 2 jours',07/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +3 minimum',null,null,non
+'il y a 2 jours',07/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 2 jours',16/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 2 jours',16/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,'de 5 à 10 ans',hybride
+'il y a 2 jours',16/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 2 jours',05/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 2 jours',26/02/2024,'giz maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur conseil / etudes - service public / administration',autre,'bac +5 et plus minimum',null,null,non
+'il y a 5 jours',05/03/2024,hcltech,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +2 minimum',null,null,non
+'il y a 5 jours',05/03/2024,'société générale maroc',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 5 jours',05/03/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 5 jours',05/03/2024,'société générale maroc',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 5 jours',05/03/2024,'alten maroc',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 5 jours',05/03/2024,'société générale maroc',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 6 jours',04/03/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 6 jours',04/03/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 6 jours',04/03/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 6 jours',04/03/2024,'excel management conseil',rabat,maroc,'informatique / electronique - secteur assurance / courtage - autres services',freelance,'bac +3','formation spécialisée',null,hybride
+'il y a 6 jours',04/03/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance',cdi,'bac +4 minimum',master,null,hybride
+'il y a 6 jours',04/03/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 6 jours',04/03/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +4 minimum',null,null,hybride
+'il y a 6 jours',04/03/2024,null,casablanca,maroc,'informatique / electronique - secteur telecom -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 7 jours',03/03/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 7 jours',03/03/2024,null,casablanca,maroc,'informatique / electronique - banque (métiers de la) - secteur banque / finance',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 7 jours',18/02/2024,'eca assurances',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 7 jours',03/03/2024,'yazaki morocco',kénitra,maroc,'informatique / electronique - multimédia / internet - secteur automobile / motos / cycles -',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 7 jours',06/02/2024,'bouygues construction it',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 8 jours',02/03/2024,'orh assessment',rabat,maroc,'informatique / electronique - secteur informatique - service public / administration',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 8 jours',22/02/2024,'dxc technology maroc',le,maroc,'informatique / electronique - multimédia / internet - secteur offshoring / nearshoring',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,'oui 100\%'
+'il y a 8 jours',02/03/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',master,null,hybride
+'il y a 8 jours',02/03/2024,tersea,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 8 jours',14/02/2024,'euro information direct service',rabat,maroc,'informatique / electronique - multimédia / internet - secteur centre d appel - informatique',cdi,'bac +3 minimum',master,null,hybride
+'il y a 8 jours',05/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 8 jours',02/03/2024,'oceane consulting it maroc',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 8 jours',02/03/2024,'oceane consulting it maroc',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 8 jours',02/03/2024,'oceane consulting it maroc',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 8 jours',02/03/2024,'leet initiative',marrakech,maroc,'informatique / electronique - secteur enseignement / formation -',cdi,'autodidacte minimum',null,null,non
+'il y a 13 jours',28/02/2024,null,casablanca,maroc,'informatique / electronique - secteur telecom -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 13 jours',28/02/2024,altados,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 13 jours',28/02/2024,altados,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 13 jours',28/02/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +4 minimum',autre,null,hybride
+'il y a 13 jours',28/02/2024,'aria tech',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',stage,'bac +5 et plus minimum',master,null,hybride
+'il y a 14 jours',28/01/2024,capgemini,casablanca,maroc,'informatique / electronique - gestion projet / etudes / r&d - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 14 jours',21/02/2024,capgemini,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 14 jours',27/02/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 14 jours',27/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 14 jours',27/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 14 jours',27/02/2024,null,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 15 jours',26/02/2024,capgemini,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - offshoring / nearshoring',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 15 jours',30/01/2024,'bank assafa',casablanca,maroc,'informatique / electronique - secteur autres services - banque / finance',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 15 jours',26/02/2024,capgemini,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - offshoring / nearshoring',cdi,'bac +5 et plus minimum',master,'de 10 à 20 ans',hybride
+'il y a 15 jours',30/01/2024,'bank assafa',casablanca,maroc,'informatique / electronique - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 15 jours',13/01/2024,'orange business',casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 15 jours',13/01/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 15 jours',26/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',stage,'bac +3 minimum',université,null,hybride
+'il y a 15 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur banque / finance -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 16 jours',31/10/2024,null,rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',stage,'bac +4 minimum','ecole d ingénieur',null,hybride
+'il y a 16 jours',25/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur','de 5 à 10 ans',hybride
+'il y a 16 jours',25/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 16 jours',25/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,'de 3 à 5 ans',hybride
+'il y a 16 jours',25/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus maximum','ecole d ingénieur',null,hybride
+'il y a 16 jours',05/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum','doctorat / dea',null,hybride
+'il y a 16 jours',16/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +3 minimum','ecole d ingénieur',null,hybride
+'il y a 18 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 18 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 18 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 19 jours',22/02/2024,null,fès,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 19 jours',17/01/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus maximum',null,null,hybride
+'il y a 19 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 19 jours',22/02/2024,null,rabat,maroc,'informatique / electronique - gestion projet / etudes / r&d - secteur agriculture / environnement -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 19 jours',21/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +3 maximum',null,'de 3 à 5 ans',hybride
+'il y a 19 jours',22/01/2024,'bouygues construction it',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',stage,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 19 jours',15/01/2024,'université internationale de rabat (uir)',rabat,maroc,'informatique / electronique - secteur enseignement / formation',cdi,'bac +5 et plus minimum',null,'de 3 à 5 ans',non
+'il y a 19 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 19 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - multimédia / internet - secteur informatique',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 19 jours',22/02/2024,'emirates airlines',autres,'émirats arabes unis','informatique / electronique - télécoms / réseaux - secteur informatique',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 20 jours',21/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 20 jours',21/02/2024,'um6p - université mohammed vi polytechnique',marrakech,maroc,'informatique / electronique - secteur enseignement / formation',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 20 jours',21/02/2024,'um6p - université mohammed vi polytechnique',marrakech,maroc,'informatique / electronique - secteur enseignement / formation',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 20 jours',21/02/2024,null,casablanca,maroc,'informatique / electronique - secteur banque / finance',cdd,'bac +3 minimum',null,null,non
+'il y a 21 jours',20/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 21 jours',20/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 21 jours',20/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus maximum',null,null,hybride
+'il y a 21 jours',20/02/2024,altados,tanger,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 21 jours',20/02/2024,altados,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 21 jours',20/02/2024,altados,tanger,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 21 jours',17/01/2024,null,rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 21 jours',06/02/2024,null,rabat,maroc,'informatique / electronique - secteur internet / multimédia',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 21 jours',06/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 21 jours',30/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 21 jours',01/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus maximum',null,'de 10 à 20 ans',hybride
+'il y a 21 jours',30/01/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 21 jours',11/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 21 jours',20/02/2024,'deloitte extended services',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 21 jours',20/02/2024,null,rabat,maroc,'informatique / electronique - secteur internet / multimédia -',cdi,'bac +5 et plus minimum',master,'de 3 à 5 ans',hybride
+'il y a 22 jours',19/02/2024,'groupe afma',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus',master,null,non
+'il y a 22 jours',19/02/2024,tersea,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 22 jours',19/02/2024,null,casablanca,maroc,'informatique / electronique - secteur banque / finance - informatique',cdd,'bac +5 et plus minimum',master,null,hybride
+'il y a 22 jours',19/02/2024,hcltech,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +3 minimum',null,null,non
+'il y a 22 jours',19/02/2024,null,rabat,maroc,'informatique / electronique - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,'de 10 à 20 ans',hybride
+'il y a 22 jours',19/02/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 22 jours',19/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +3 minimum','bts / dut',null,non
+'il y a 23 jours',18/02/2024,'cgi technologies et solutions maroc',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 23 jours',18/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 23 jours',18/02/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 23 jours',18/02/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 23 jours',18/02/2024,'deloitte extended services',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,'de 1 à 3 ans',hybride
+'il y a 23 jours',18/02/2024,atlanse,autres,france,'informatique / electronique - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 23 jours',18/02/2024,hcltech,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +2 minimum',null,null,non
+'il y a 23 jours',18/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 26 jours',15/02/2024,'cgi technologies et solutions maroc',le,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique',cdi,'bac +5 et plus',null,'de 10 à 20 ans',hybride
+'il y a 26 jours',15/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +3 minimum','ecole d ingénieur',null,hybride
+'il y a 26 jours',15/02/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 26 jours',15/02/2024,null,rabat,maroc,'informatique / electronique - secteur internet / multimédia -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 27 jours',14/02/2024,'eca assurances',casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique -',cdi,'bac +4 minimum',null,null,non
+'il y a 27 jours',14/02/2024,'université internationale de rabat (uir)',rabat,maroc,'informatique / electronique - multimédia / internet - secteur agence pub / marketing direct - enseignement / formation',cdi,'bac +3 minimum',null,'de 3 à 5 ans',non
+'il y a 27 jours',23/01/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 27 jours',15/01/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 27 jours',29/01/2024,'orange business',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 27 jours',14/02/2024,'dxc technology maroc',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',master,null,hybride
+'il y a 27 jours',14/02/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 27 jours',14/02/2024,'econocom maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur centre d appel - informatique',cdi,'bac +2 minimum','bts / dut',null,hybride
+'il y a 28 jours',13/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 28 jours',13/02/2024,null,rabat,maroc,'informatique / electronique - secteur internet / multimédia -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 28 jours',13/02/2024,tersea,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +3 minimum',université,null,hybride
+'il y a 29 jours',12/02/2024,null,rabat,maroc,'informatique / electronique - secteur internet / multimédia -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 29 jours',12/02/2024,'sofrecom maroc',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 29 jours',12/02/2024,'université euro-méditerranéenne de fès',fès,maroc,'informatique / electronique - télécoms / réseaux - secteur audiovisuel - informatique',cdi,'bac +2 minimum','bts / dut',null,non
+'il y a 30 jours',28/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',hybride
+'il y a 30 jours',11/02/2024,bricoma,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur distribution - ameublement / décoration',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 30 jours',11/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 30 jours',11/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 30 jours',11/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 30 jours',11/02/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 30 jours',11/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 33 jours',08/02/2024,null,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 34 jours',07/02/2024,tersea,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 35 jours',06/02/2024,null,rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +5 et plus minimum','ecole d ingénieur','moins de 1 an',hybride
+'il y a 35 jours',06/02/2024,null,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 35 jours',06/02/2024,'manpower agences',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur autres industries',cdi,'bac +5 et plus minimum',null,'de 10 à 20 ans',non
+'il y a 35 jours',06/02/2024,welink,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique -',freelance,'bac +5 et plus minimum',master,'de 5 à 10 ans',hybride
+'il y a 35 jours',06/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique',stage,'bac +4 minimum',master,null,hybride
+'il y a 35 jours',06/02/2024,'colibri services',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur centre d appel - informatique',cdi,'bac +2 minimum','bts / dut',null,non
+'il y a 36 jours',05/02/2024,'alten maroc',rabat,maroc,'informatique / electronique - secteur automobile / motos / cycles',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 36 jours',05/02/2024,'leet initiative',marrakech,maroc,'informatique / electronique - secteur enseignement / formation -',cdi,'autodidacte minimum',null,null,non
+'il y a 36 jours',05/02/2024,'axa rabat (axa services)',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 37 jours',21/01/2024,null,le,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +2 minimum','formation professionnelle',null,non
+'il y a 37 jours',04/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique - autres services',autre,'bac +5 et plus minimum',master,null,non
+'il y a 37 jours',04/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 37 jours',04/02/2024,'sofrecom maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 37 jours',04/02/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 40 jours',01/02/2024,'université internationale de rabat (uir)',rabat,maroc,'informatique / electronique - multimédia / internet - secteur enseignement / formation',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 40 jours',01/02/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 40 jours',01/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 40 jours',01/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus','ecole d ingénieur',null,hybride
+'il y a 40 jours',01/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 40 jours',01/02/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 40 jours',01/02/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 40 jours',01/02/2024,'alten maroc',rabat,maroc,'informatique / electronique - secteur immobilier / promoteur / agence',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 41 jours',30/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 41 jours',30/01/2024,null,rabat,maroc,'informatique / electronique - secteur conseil / etudes',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 41 jours',30/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 41 jours',30/01/2024,'aria tech',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +2 minimum','bts / dut',null,'oui 100\%'
+'il y a 41 jours',30/01/2024,intelcia,autres,maroc,'informatique / electronique - secteur centre d appel',cdi,'bac +2 minimum',null,null,non
+'il y a 41 jours',30/01/2024,'aria tech',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',master,null,hybride
+'il y a 41 jours',30/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 42 jours',29/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 42 jours',29/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 42 jours',29/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 42 jours',29/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 42 jours',29/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 43 jours',28/01/2024,'orh assessment',casablanca,maroc,'informatique / electronique - secteur internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur','de 5 à 10 ans',non
+'il y a 43 jours',28/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 43 jours',28/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus maximum','ecole d ingénieur','de 5 à 10 ans',hybride
+'il y a 43 jours',28/01/2024,'sofrecom maroc',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 43 jours',28/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 44 jours',27/01/2024,altados,casablanca,maroc,'informatique / electronique - secteur informatique',freelance,'bac +5 et plus minimum',null,null,non
+'il y a 44 jours',27/01/2024,null,casablanca,maroc,'informatique / electronique - secteur energie -',autre,'bac +5 et plus minimum',null,null,non
+'il y a 44 jours',27/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 44 jours',27/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 44 jours',27/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 46 jours',25/01/2024,innovx,casablanca,maroc,'informatique / electronique - secteur electronique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 47 jours',24/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 47 jours',24/01/2024,'ipanema consulting',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur','de 5 à 10 ans',hybride
+'il y a 47 jours',24/01/2024,null,rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur agriculture / environnement -',cdi,'bac +4 minimum','ecole d ingénieur',null,non
+'il y a 47 jours',24/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 48 jours',23/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 48 jours',10/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,'de 3 à 5 ans',non
+'il y a 48 jours',23/01/2024,'akkodis maroc',tanger,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,'de 3 à 5 ans',non
+'il y a 48 jours',23/01/2024,'econocom maroc',rabat,maroc,'informatique / electronique - call centers (métiers de) - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 48 jours',23/01/2024,'akkodis maroc',tanger,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,'de 3 à 5 ans',non
+'il y a 48 jours',23/01/2024,'axa group operations maroc',rabat,maroc,'informatique / electronique - secteur informatique -',stage,'bac +4 minimum',null,'moins de 1 an',hybride
+'il y a 49 jours',22/01/2024,'intelcia its',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 49 jours',22/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +2 minimum',null,null,non
+'il y a 49 jours',22/01/2024,'akkodis maroc',casablanca,maroc,'informatique / electronique - secteur autres industries - informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 49 jours',22/01/2024,'akkodis maroc',casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 49 jours',22/01/2024,'akkodis maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 50 jours',21/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 50 jours',21/01/2024,ingenius,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 3 à 5 ans',non
+'il y a 50 jours',21/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 51 jours',20/01/2024,'manpower agences',casablanca,maroc,'informatique / electronique - marketing - secteur distribution - autres industries',cdi,'bac +5 et plus minimum',null,'de 10 à 20 ans',non
+'il y a 51 jours',20/01/2024,'sopra steria spain',autres,espagne,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +4 minimum',null,'de 3 à 5 ans',non
+'il y a 51 jours',20/01/2024,'sopra steria spain',autres,espagne,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +4 minimum',null,'de 5 à 10 ans',non
+'il y a 51 jours',20/01/2024,'sopra steria spain',autres,espagne,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +4 minimum',null,'de 3 à 5 ans',non
+'il y a 51 jours',16/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',stage,'bac +5 et plus minimum','doctorat / dea',null,hybride
+'il y a 51 jours',20/01/2024,'sopra steria spain',autres,espagne,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',null,'de 3 à 5 ans',non
+'il y a 51 jours',20/01/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - secteur internet / multimédia -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 51 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,'de 3 à 5 ans',non
+'il y a 51 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 51 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 51 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,'de 3 à 5 ans',non
+'il y a 51 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 51 jours',20/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur banque / finance - informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 51 jours',20/01/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - banque (métiers de la) - secteur informatique -',cdi,'bac +4 minimum',null,null,hybride
+'il y a 51 jours',20/01/2024,'dxc technology maroc',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',master,null,hybride
+'il y a 51 jours',20/01/2024,null,fès,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',stage,'bac +3 minimum',université,null,hybride
+'il y a 54 jours',17/01/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - telecom',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 54 jours',17/01/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +3 minimum',master,null,hybride
+'il y a 54 jours',17/01/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',master,null,hybride
+'il y a 54 jours',17/01/2024,null,rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 54 jours',17/01/2024,'aria tech',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +3 minimum',master,null,non
+'il y a 54 jours',17/01/2024,'sopra steria spain',autres,espagne,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +4 minimum',null,'de 3 à 5 ans',non
+'il y a 54 jours',17/01/2024,ciprotec,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique -',cdi,'bac +2 minimum','bts / dut','de 1 à 3 ans',non
+'il y a 54 jours',17/01/2024,ciprotec,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +2 minimum',null,'de 1 à 3 ans',non
+'il y a 54 jours',17/01/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur energie -',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 54 jours',17/01/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur energie -',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 54 jours',17/01/2024,welink,le,maroc,'informatique / electronique - secteur informatique - telecom',freelance,'bac +5 et plus minimum','ecole d ingénieur',null,'oui 100\%'
+'il y a 55 jours',16/01/2024,welink,le,maroc,'informatique / electronique - secteur informatique - telecom',freelance,'bac +5 et plus minimum','ecole d ingénieur',null,'oui 100\%'
+'il y a 55 jours',16/01/2024,'oceane consulting it maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',freelance,'bac +5 et plus minimum',null,null,non
+'il y a 55 jours',16/01/2024,'air arabia',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +3 minimum',université,null,non
+'il y a 56 jours',15/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 56 jours',15/01/2024,'cgi technologies et solutions maroc',fès,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 56 jours',15/01/2024,'cgi technologies et solutions maroc',rabat,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 56 jours',15/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +4 minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 56 jours',15/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 56 jours',15/01/2024,'cnexia tech',le,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +4 minimum',master,null,'oui 100\%'
+'il y a 56 jours',15/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 56 jours',15/01/2024,null,rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',autre,'bac +5 et plus minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,rabat,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique - telecom',cdi,'bac +4 minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,casablanca,maroc,'informatique / electronique - télécoms / réseaux - secteur informatique',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,hybride
+'il y a 56 jours',15/01/2024,'cgi technologies et solutions maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique - telecom',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +4 minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,fès,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +4 minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,marrakech,maroc,'informatique / electronique - multimédia / internet - secteur informatique - offshoring / nearshoring',cdi,'bac +5 et plus minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,null,rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 56 jours',15/01/2024,'ipanema consulting',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +4 minimum','ecole d ingénieur',null,hybride
+'il y a 56 jours',15/01/2024,null,casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +4 minimum',null,null,hybride
+'il y a 56 jours',15/01/2024,'cnexia tech',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,'oui 100\%'
+'il y a 56 jours',15/01/2024,'cnexia tech',rabat,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,'oui 100\%'
+'il y a 56 jours',15/01/2024,'orh assessment',casablanca,maroc,'informatique / electronique - multimédia / internet - secteur informatique - internet / multimédia',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 57 jours',14/01/2024,'eczacibasi (ecp maroc)',casablanca,maroc,'informatique / electronique - secteur distribution - autres industries',cdi,'bac +5 et plus minimum',null,null,non
+'il y a 57 jours',14/01/2024,'y stratégie',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',master,null,non
+'il y a 58 jours',13/01/2024,'orange business',casablanca,maroc,'informatique / electronique - secteur informatique',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,hybride
+'il y a 58 jours',13/01/2024,null,rabat,maroc,'informatique / electronique - gestion projet / etudes / r&d - secteur agriculture / environnement -',cdi,'bac +5 et plus minimum','ecole d ingénieur',null,non
+'il y a 61 jours',10/01/2024,'dxc technology maroc',rabat,maroc,'informatique / electronique - multimédia / internet - secteur informatique -',cdi,'bac +3 minimum',null,'de 5 à 10 ans',hybride
+'il y a 61 jours',10/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 61 jours',10/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 61 jours',10/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 61 jours',10/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',hybride
+'il y a 61 jours',10/01/2024,'cgi technologies et solutions maroc',casablanca,maroc,'informatique / electronique - secteur informatique -',cdi,'bac +5 et plus minimum',null,'de 5 à 10 ans',non
+'il y a 119 jours',13/11/2030,null,casablanca,maroc,'informatique / electronique - commercial / vente / export - secteur recrutement / intérim -',cdi,'bac +5 et plus',null,null,non
+'il y a 25 minutes',?,'excellium carrières',marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,?,?
+'il y a 26 minutes',?,'excellium carrières','casablanca / marrakech','casablanca / marrakech','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 26 minutes',?,'excellium carrières','casablanca / marrakech','casablanca / marrakech','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 18 heures',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 19 heures',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 22 heures',?,'univers rh groupe omf',casablanca,casablanca,autres,cdi,'bac+5 et plus','bac+5 et plus','junior (de 3 à 5 ans)',?
+'il y a 22 heures',?,'excellium carrières','casablanca / marrakech','casablanca / marrakech','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 jour',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 jour',?,'job developpement',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 jour',?,'ms project & developpement',rabat,rabat,?,cdi,?,?,'junior (de 3 à 5 ans)',?
+'il y a 1 jour',?,ttam,casablanca,casablanca,'transport / manutention / logistique',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 jour',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 jour',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 jour',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 jour',?,'skynet alliances',casablanca,casablanca,assurance,cdi,bac+3,bac+3,'junior (de 3 à 5 ans)',?
+'il y a 2 jours',?,'axelliances consulting',casablanca,casablanca,assurance,cdi,bac+3,bac+3,'junior (de 3 à 5 ans)',?
+'il y a 2 jours',?,msb,casablanca,casablanca,'comptabilité / gestion / audit',cdi,'bac+2 / bac+3','bac+2 / bac+3','débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'job developpement',marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'job developpement',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'oxo . com',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'oxo . com',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance',bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 4 jours',?,'czar groupe',marrakech,marrakech,'centres d appels',cdi,français,français,?,?
+'il y a 5 jours',?,'lmh call',meknes,meknes,'centres d appels',cdi,'bac / bac+1 / bac+2','bac / bac+1 / bac+2','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)',?
+'il y a 5 jours',?,msb,casablanca,casablanca,'comptabilité / gestion / audit',cdi,'bac+2 / bac+3','bac+2 / bac+3','débutant (de 1 à 3 ans)',?
+'il y a 5 jours',?,'kocc médias',marrakech,marrakech,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4','bac / bac+1 / bac+2 / bac+3 / bac+4','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)',?
+'il y a 5 jours',?,'kocc médias',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4','bac / bac+1 / bac+2 / bac+3 / bac+4','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 5 jours',?,werecrut,mohammedia,mohammedia,'centres d appels','cdi / cdd / free lance','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 5 jours',?,werecrut,mohammedia,mohammedia,'centres d appels','cdi / cdd / free lance','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 5 jours',?,werecrut,mohammedia,mohammedia,'centres d appels','cdi / cdd / free lance','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 5 jours',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 5 jours',?,'dubos isabelle forever','fes / rabat / casablanca','fes / rabat / casablanca','franchise / santé','free lance','niv bac et moins','niv bac et moins','débutant (de 1 à 3 ans)',?
+'il y a 5 jours',?,'celyins assurances',rabat,rabat,'centres d appels','cdi / cdd / free lance',bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 5 jours',?,'elsayed service',casablanca,casablanca,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 5 jours',?,foxassursuccursale,casablanca,casablanca,assurance,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 6 jours',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 6 jours',?,'excellium carrières','casablanca / marrakech','casablanca / marrakech','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 6 jours',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 6 jours',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 6 jours',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 6 jours',?,'co managers','meknes / fes / marrakech / agadir','meknes / fes / marrakech / agadir','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 6 jours',?,'réseau guide emploi',casablanca,casablanca,'education / enseignement / formation',cdi,bac+2,bac+2,?,?
+'il y a 6 jours',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 6 jours',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 6 jours',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 6 jours',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 6 jours',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 1 semaine',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,eigenvalue,'casablanca / mohammedia','casablanca / mohammedia',?,cdd,bac+2,bac+2,?,?
+'il y a 1 semaine',?,'le call',rabat,rabat,?,cdi,français,français,?,?
+'il y a 1 semaine',?,'ipsum consulting services',tanger,tanger,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance',bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance',bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'job developpement',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,?,?
+'il y a 1 semaine',?,'net courtage assurance','rabat / casablanca','rabat / casablanca','centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'job developpement',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'job developpement',marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'atires partners',casablanca,casablanca,autres,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'oxo . com',rabat,rabat,'centres d appels',cdi,bac+1,bac+1,'senior (de 5 à 7 ans)',?
+'il y a 1 semaine',?,'oxo . com',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'les mandarins maroc','rabat / salé / kenitra / temara / mohammedia','rabat / salé / kenitra / temara / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'2ca business',kenitra,kenitra,assurance,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'2ca business',kenitra,kenitra,assurance,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'2ca business',kenitra,kenitra,assurance,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'golden gate group',casablanca,casablanca,'centres d appels','cdd / free lance / intérim / lettre d engagement','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 1 semaine',?,werecrut,mohammedia,mohammedia,'centres d appels','cdi / free lance','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,werecrut,mohammedia,mohammedia,'centres d appels','cdi / free lance','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 1 semaine',?,werecrut,mohammedia,mohammedia,'centres d appels','cdi / free lance','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 1 semaine',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 1 semaine',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 1 semaine',?,'co managers','meknes / fes / tanger / tetouan / oujda / nador / berkane / taza / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / el jadida / marrakech / safi / agadir / laâyoune','meknes / fes / tanger / tetouan / oujda / nador / berkane / taza / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / el jadida / marrakech / safi / agadir / laâyoune','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 1 semaine',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 1 semaine',?,'co managers','meknes / fes / marrakech / agadir','meknes / fes / marrakech / agadir','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 1 semaine',?,profficiis,rabat,rabat,'centres d appels','lettre d engagement',français,français,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'celyins assurances',rabat,rabat,'centres d appels','cdi / free lance',bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,profficiis,rabat,rabat,?,'lettre d engagement',bac+1,bac+1,'débutant (de 1 à 3 ans)',?
+'il y a 1 semaine',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'le call',rabat,rabat,?,cdi,français,français,?,?
+'il y a 2 semaines',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,?,?
+'il y a 2 semaines',?,'excellium carrières','casablanca / marrakech','casablanca / marrakech','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'ag solutions',casablanca,casablanca,?,cdi,français,français,?,?
+'il y a 2 semaines',?,'ag solutions',casablanca,casablanca,?,cdi,français,français,?,?
+'il y a 2 semaines',?,'ads glory',tanger,tanger,'informatique / internet / multimedia',cdi,'bac+5 et plus','bac+5 et plus','débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 2 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'eca assurances',casablanca,casablanca,'centres d appels',cdi,français,français,?,?
+'il y a 2 semaines',?,'concept assur',casablanca,casablanca,'centres d appels',cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 2 semaines',?,here2help,rabat,rabat,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'job developpement',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'ag solutions',casablanca,casablanca,autres,cdi,bac+2,bac+2,?,?
+'il y a 2 semaines',?,'job developpement',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'job developpement',marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'phenix assurances',rabat,rabat,?,cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 2 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,?,?
+'il y a 2 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,?,?
+'il y a 2 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,addwork,casablanca,casablanca,'centres d appels','cdi / cdd / free lance / intérim / lettre d engagement','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 2 semaines',?,addwork,casablanca,casablanca,'centres d appels','cdi / cdd / free lance / intérim / lettre d engagement','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans) / + 10 ans',?
+'il y a 2 semaines',?,addwork,casablanca,casablanca,'centres d appels',cdi,'niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'ste anonyme',casablanca,casablanca,'grande distribution',cdi,bac+4,bac+4,'senior (de 5 à 7 ans)',?
+'il y a 2 semaines',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'ste anonyme',casablanca,casablanca,'industrie alimentaire / agroalimentaire','lettre d engagement',bac+4,bac+4,'fraichement diplômé',?
+'il y a 2 semaines',?,'hnbc groupe succursale','casablanca / mohammedia','casablanca / mohammedia','centres d appels / conseil / consulting / assurance / santé / télécommunications',cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'sync team',rabat,rabat,télécommunications,cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'sync team',rabat,rabat,télécommunications,cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'sync team',rabat,rabat,télécommunications,cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'co managers','fes / marrakech / agadir','fes / marrakech / agadir','centres d appels',cdi,'bac / bac+1','bac / bac+1','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?
+'il y a 2 semaines',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)',?
+'il y a 2 semaines',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?
+'il y a 2 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 2 semaines',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,e-medias,marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,prevas,casablanca,casablanca,assurance,cdi,bac+4,bac+4,'senior (de 5 à 7 ans)',?
+'il y a 3 semaines',?,'hnbc groupe succursale','casablanca / mohammedia','casablanca / mohammedia','centres d appels / conseil / consulting / assurance / santé / télécommunications',cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,français,français,?,?
+'il y a 3 semaines',?,'net courtage assurance','rabat / casablanca','rabat / casablanca','centres d appels',cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'job developpement',rabat,rabat,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'celyins assurances',rabat,rabat,assurance,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 3 semaines',?,'atires partners',casablanca,casablanca,'banque / organisme financier',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'atires partners',casablanca,casablanca,autres,cdi,'bac+5 et plus','bac+5 et plus','junior (de 3 à 5 ans)',?
+'il y a 3 semaines',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 3 semaines',?,'ensure call',casablanca,casablanca,'centres d appels',cdi,'bac+3 / bac+4 / bac+5 et plus','bac+3 / bac+4 / bac+5 et plus','junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 3 semaines',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'concept assur',casablanca,casablanca,?,cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 3 semaines',?,'hnbc groupe succursale','casablanca / mohammedia','casablanca / mohammedia','centres d appels / conseil / consulting / assurance / santé / télécommunications',cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'speed tarif',casablanca,casablanca,'centres d appels',cdi,bac+1,bac+1,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'le call',rabat,rabat,?,cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'cpa cs','rabat / salé / temara / casablanca / mohammedia','rabat / salé / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'excellium carrières',rabat,rabat,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 3 semaines',?,'co managers',marrakech,marrakech,'centres d appels',cdi,bac,bac,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 3 semaines',?,'co managers','rabat / salé / marrakech','rabat / salé / marrakech','centres d appels',cdi,bac,bac,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 3 semaines',?,'co managers',casablanca,casablanca,'centres d appels',cdi,bac,bac,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 3 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 3 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,allowin,'casablanca / mohammedia','casablanca / mohammedia',?,cdi,'bac / bac+1 / bac+2','bac / bac+1 / bac+2','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)',?
+'il y a 4 semaines',?,'concept assur',casablanca,casablanca,'centres d appels',cdi,bac,bac,'senior (de 5 à 7 ans)',?
+'il y a 4 semaines',?,'pcs assure','meknes / fes / tanger / oujda / taza / ifrane / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / bouskoura / el jadida / azemmour / bouznika / marrakech / safi / agadir','meknes / fes / tanger / oujda / taza / ifrane / rabat / salé / kenitra / temara / khouribga / beni-mellal / casablanca / mohammedia / bouskoura / el jadida / azemmour / bouznika / marrakech / safi / agadir','banque / organisme financier / centres d appels / conseil / consulting / assurance','cdi / cdd / free lance',bac+2,bac+2,'débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)',?
+'il y a 4 semaines',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance',bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance',bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,gwm,casablanca,casablanca,'industrie métallurgique',cdi,bac+4,bac+4,'junior (de 3 à 5 ans)',?
+'il y a 4 semaines',?,terrain360,marrakech,marrakech,'centres d appels',cdi,bac+1,bac+1,'junior (de 3 à 5 ans)',?
+'il y a 4 semaines',?,ttam,casablanca,casablanca,'transport / manutention / logistique',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'ecs informatique',rabat,rabat,'informatique / internet / multimedia',cdi,bac+2,bac+2,'senior (de 5 à 7 ans)',?
+'il y a 4 semaines',?,'axelliances consulting',casablanca,casablanca,'centres d appels',cdi,bac+4,bac+4,'junior (de 3 à 5 ans)',?
+'il y a 4 semaines',?,anonyme,rabat,rabat,?,intérim,bac+3,bac+3,?,?
+'il y a 4 semaines',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'speed tarif',casablanca,casablanca,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'cpa cs','rabat / salé / temara / casablanca / mohammedia','rabat / salé / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'speed tarif',casablanca,casablanca,télécommunications,cdi,bac+1,bac+1,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'kocc médias',marrakech,marrakech,'centres d appels',cdi,français,français,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?
+'il y a 4 semaines',?,'kocc médias',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4','bac / bac+1 / bac+2 / bac+3 / bac+4','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 4 semaines',?,'si claire',salé,salé,'centres d appels','free lance',bac+2,bac+2,'senior (de 5 à 7 ans)',?
+'il y a 4 semaines',?,aksam,rabat,rabat,assurance,'free lance',bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 4 semaines',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 4 semaines',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance','bac+5 et plus','bac+5 et plus','fraichement diplômé',?
+'il y a 4 semaines',?,'net courtage assurance','rabat / casablanca','rabat / casablanca','centres d appels',cdi,français,français,?,?
+'il y a 4 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,français,français,?,?
+'il y a 4 semaines',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,?,?
+'il y a 4 semaines',?,'speed tarif',casablanca,casablanca,télécommunications,cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'golden gate group',casablanca,casablanca,'informatique / internet / multimedia',cdi,bac+1,bac+1,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'recrut call',rabat,rabat,'centres d appels',cdi,bac,bac,?,?
+'il y a 1 mois',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'atlantic talent',kenitra,kenitra,'comptabilité / gestion / audit',cdi,'bac+5 et plus','bac+5 et plus','senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'eca assurances',casablanca,casablanca,'centres d appels',cdi,français,français,?,?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'direct performance',rabat,rabat,'education / enseignement / formation','lettre d engagement',bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 1 mois',?,'master kids',marrakech,marrakech,'education / enseignement / formation',cdd,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'co managers',casablanca,casablanca,'centres d appels',cdi,bac,bac,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'co managers','meknes / fes / rabat / salé / kenitra','meknes / fes / rabat / salé / kenitra','centres d appels',cdi,bac,bac,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'co managers',marrakech,marrakech,'centres d appels',cdi,bac,bac,'fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'skynet alliances',casablanca,casablanca,assurance,cdi,bac+2,bac+2,'senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'axelliances consulting',casablanca,casablanca,assurance,cdi,bac+2,bac+2,'senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,ttam,casablanca,casablanca,'transport / manutention / logistique',cdi,'bac+5 et plus','bac+5 et plus','junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia / bouznika','rabat / salé / kenitra / temara / casablanca / mohammedia / bouznika','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'top class espresso',casablanca,casablanca,'grande distribution',cdi,'bac+5 et plus','bac+5 et plus','junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,ttam,tanger,tanger,'transport / manutention / logistique',cdi,'bac+5 et plus','bac+5 et plus','junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'sync team',rabat,rabat,télécommunications,cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'atlantic talent',kenitra,kenitra,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,'niv bac et moins','niv bac et moins','débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'axelliances consulting',casablanca,casablanca,'informatique / internet / multimedia',cdi,français,français,?,?
+'il y a 1 mois',?,'direct performance',tanger,tanger,'education / enseignement / formation','lettre d engagement','bac+5 et plus','bac+5 et plus','fraichement diplômé',?
+'il y a 1 mois',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 1 mois',?,'direct performance',rabat,rabat,'education / enseignement / formation','lettre d engagement',bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'top class espresso',agadir,agadir,'tourisme / hôtellerie / restauration',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,idc,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,idc,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'elc assurances group',casablanca,casablanca,?,cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'2 ya tek service',meknes,meknes,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,idc,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,copmart,'rabat / salé / kenitra / temara','rabat / salé / kenitra / temara','centres d appels / assurance','cdi / cdd','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'ferja assur',rabat,rabat,?,cdi,français,français,?,?
+'il y a 1 mois',?,anonyme,rabat,rabat,?,intérim,bac+3,bac+3,'fraichement diplômé',?
+'il y a 1 mois',?,'ferja assur',rabat,rabat,?,cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'eids maroc',rabat,rabat,'centres d appels',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'eids maroc',rabat,rabat,'centres d appels',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,maroskin,'fes / tanger / tetouan / oujda / nador / rabat / casablanca / marrakech / agadir','fes / tanger / tetouan / oujda / nador / rabat / casablanca / marrakech / agadir','grande distribution','cdi / cdd / free lance',bac+4,bac+4,'senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'concept assur',casablanca,casablanca,'centres d appels',cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?
+'il y a 1 mois',?,'co managers','meknes / fes / rabat / salé / kenitra','meknes / fes / rabat / salé / kenitra','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'co managers',marrakech,marrakech,'centres d appels',cdi,'bac / bac+1 / bac+2','bac / bac+1 / bac+2','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'excellium carrières',marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,?,?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'direct performance',rabat,rabat,'education / enseignement / formation','lettre d engagement',bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 1 mois',?,'eids maroc',rabat,rabat,'centres d appels',cdi,bac+3,bac+3,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'concept assur',casablanca,casablanca,'centres d appels',cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,sgm2i,temara,temara,'informatique / internet / multimedia',cdd,bac+2,bac+2,'débutant (de 1 à 3 ans) / junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'direct performance',rabat,rabat,'education / enseignement / formation','free lance',bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'direct performance',rabat,rabat,'education / enseignement / formation','lettre d engagement',bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance','rabat / kenitra / temara / casablanca','rabat / kenitra / temara / casablanca','centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,idc,rabat,rabat,autres,intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,idc,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'m2k sourcing','meknes / fes / rabat / salé / kenitra / temara / casablanca / mohammedia / el jadida / marrakech','meknes / fes / rabat / salé / kenitra / temara / casablanca / mohammedia / el jadida / marrakech','centres d appels / assurance','free lance',bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'zenith assurance maroc',rabat,rabat,'centres d appels',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'excellium carrières',marrakech,marrakech,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'arcanes technologies',casablanca,casablanca,'informatique / internet / multimedia',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'vita way',fes,fes,'conseil / consulting',cdi,anglais,anglais,?,?
+'il y a 1 mois',?,'co managers',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'co managers','meknes / fes / rabat / salé / kenitra','meknes / fes / rabat / salé / kenitra','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'si claire',salé,salé,'centres d appels','free lance',français,français,?,?
+'il y a 1 mois',?,'direct performance',rabat,rabat,'education / enseignement / formation','lettre d engagement',bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'haya assurances',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'sehi maroc',casablanca,casablanca,autres,cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'co managers',marrakech,marrakech,'centres d appels',cdi,'niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','niv bac et moins / bac / bac+1 / bac+2 / bac+3 / bac+4 / bac+5 et plus','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,assurance,meknes,meknes,assurance,'cdi / cdd','bac+2 / bac+3','bac+2 / bac+3','débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'ag solutions',casablanca,casablanca,?,cdi,français,français,?,?
+'il y a 1 mois',?,'consilium recrutement',casablanca,casablanca,'tourisme / hôtellerie / restauration','lettre d engagement',bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'concept assur',casablanca,casablanca,'centres d appels',cdi,bac,bac,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'excellium carrières',casablanca,casablanca,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 1 mois',?,here2help,rabat,rabat,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'recrut call',casablanca,casablanca,'centres d appels',cdi,bac+2,bac+2,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,idc,rabat,rabat,'publicité / communication',intérim,'bac+5 et plus','bac+5 et plus','fraichement diplômé',?
+'il y a 1 mois',?,idc,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'kocc médias',marrakech,marrakech,'centres d appels',cdi,'bac+1 / bac+2 / bac+3 / bac+4','bac+1 / bac+2 / bac+3 / bac+4','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'kocc médias',casablanca,casablanca,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4','bac / bac+1 / bac+2 / bac+3 / bac+4','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'kocc médias',mohammedia,mohammedia,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3 / bac+4','bac / bac+1 / bac+2 / bac+3 / bac+4','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,idc,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'phenix assurances',rabat,rabat,?,cdi,français,français,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,marocadre,berrechid,berrechid,'industrie automobile',cdi,'bac+5 et plus','bac+5 et plus','confirmé (de 7 à 10 ans)',?
+'il y a 1 mois',?,marocadre,casablanca,casablanca,autres,cdi,'bac+5 et plus','bac+5 et plus','confirmé (de 7 à 10 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'net courtage assurance',rabat,rabat,'centres d appels',cdi,bac,bac,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'cpa cs','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'cpa maroc','rabat / salé / kenitra / temara / casablanca / mohammedia','rabat / salé / kenitra / temara / casablanca / mohammedia','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,'les mandarins maroc','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','rabat / salé / kenitra / temara / casablanca / mohammedia / marrakech','centres d appels',cdi,bac+2,bac+2,'junior (de 3 à 5 ans)',?
+'il y a 1 mois',?,itfacto,casablanca,casablanca,'informatique / internet / multimedia',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'expert business unit',rabat,rabat,'informatique / internet / multimedia',cdi,bac+3,bac+3,'senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,'inter courtage',kenitra,kenitra,'centres d appels / assurance',cdi,français,français,?,?
+'il y a 1 mois',?,'mh group',casablanca,casablanca,franchise,cdi,français,français,'senior (de 5 à 7 ans)',?
+'il y a 1 mois',?,plfsarl,tanger,tanger,'industrie textile',cdi,bac+2,bac+2,?,?
+'il y a 1 mois',?,cbo,casablanca,casablanca,'informatique / internet / multimedia',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,cbo,casablanca,casablanca,'informatique / internet / multimedia',cdi,bac+3,bac+3,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'si claire',rabat,rabat,'centres d appels','free lance',français,français,?,?
+'il y a 1 mois',?,werecrut,rabat,rabat,'centres d appels','free lance',français,français,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,'czar groupe',marrakech,marrakech,'centres d appels',cdi,anglais,anglais,?,?
+'il y a 1 mois',?,'ag solutions',casablanca,casablanca,?,cdi,français,français,'débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,clientmarketing,casablanca,casablanca,'centres d appels',cdi,'niv bac et moins','niv bac et moins','débutant (de 1 à 3 ans)',?
+'il y a 1 mois',?,careersinmorocco,rabat,rabat,'recrutement / intérim',intérim,bac+2,bac+2,'fraichement diplômé',?
+'il y a 1 mois',?,'co managers',marrakech,marrakech,'centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?
+'il y a 1 mois',?,'co managers','meknes / fes / salé / kenitra','meknes / fes / salé / kenitra','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?
+'il y a 1 mois',?,'co managers','casablanca / mohammedia','casablanca / mohammedia','centres d appels',cdi,'bac / bac+1 / bac+2 / bac+3','bac / bac+1 / bac+2 / bac+3','fraichement diplômé / débutant (de 1 à 3 ans) / junior (de 3 à 5 ans) / senior (de 5 à 7 ans) / confirmé (de 7 à 10 ans)',?

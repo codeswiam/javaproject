@@ -1,6 +1,7 @@
 package gui.visualization;
 
 import db.DBManager;
+import db.DataCleaning;
 import debug.ScraperDebug;
 import gui.machinelearning.ClassifierChoiceUI;
 import gui.machinelearning.ClusteringChoiceUI;
@@ -11,6 +12,8 @@ import javax.swing.border.LineBorder;
 import javax.swing.plaf.basic.BasicTableHeaderUI;
 import javax.swing.table.JTableHeader;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -103,17 +106,17 @@ public class VisualizationUI extends JFrame {
         buttonsContainer.setBackground(Colors.white);
         containerContainer.add(buttonsContainer, BorderLayout.CENTER);
 
-        /*
         cleanData = new JButton("Clean Data");
         cleanData.setFont(new Font(fontName, Font.BOLD, 15));
         cleanData.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // do something
+                DataCleaning.handleSalaryMissingValues();
+                DataCleaning.cleaningEmptyRows();
             }
         });
         cleanData.setForeground(Colors.brown);
-        buttonsContainer.add(cleanData);*/
+        buttonsContainer.add(cleanData);
 
         savetoDB = new JButton("Save to DataBase");
         savetoDB.setFont(new Font(fontName, Font.BOLD, 15));
@@ -126,9 +129,6 @@ public class VisualizationUI extends JFrame {
         chartButton.addActionListener(e -> new ChartUI());
         chartButton.setForeground(Colors.brown);
         buttonsContainer.add(chartButton);
-
-        JLabel fillerLabel = new JLabel();
-        buttonsContainer.add(fillerLabel);
 
         // machine learning buttons
 

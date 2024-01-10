@@ -164,7 +164,7 @@ public class ChartUI extends JFrame {
         }
 
         JFreeChart chart = ChartFactory.createBarChart(
-                "Contract Types per Job Post",
+                "Most Proposed Contract Types",
                 "Contract Type",
                 "Number of Posts",
                 dataset,
@@ -213,7 +213,7 @@ public class ChartUI extends JFrame {
         plot.setSeriesPaint(new Color(127, 85, 57));
 
         JFreeChart chart = new JFreeChart(
-                "Education Levels per Job Post",
+                "Most Demanded Education Levels",
                 JFreeChart.DEFAULT_TITLE_FONT,
                 plot,
                 false);
@@ -259,7 +259,7 @@ public class ChartUI extends JFrame {
         }
 
         JFreeChart chart = new JFreeChart(
-                "Languages per Job Post",
+                "Most Demanded Languages",
                 JFreeChart.DEFAULT_TITLE_FONT,
                 plot,
                 false

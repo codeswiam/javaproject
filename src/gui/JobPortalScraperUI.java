@@ -70,22 +70,17 @@ public class JobPortalScraperUI extends JFrame {
         };
 
         emploiScraper = new EmploiScraper();
-        emploiScraper.setListener(scraperListener);
-        /*
         emploiScraper.setListener(new scrapers.ScraperListener() {
-            @Override
             public void updateTotalPages(int pages) {
-                // logsLabel.setText("Number of pages found: " + pages);
-                System.out.println("Number of pages found: " + pages);
-                // logsPane.setText(logsPane.getText() + "Number of pages found: " + pages + "\n");
+                logsLabel.setText("Number of pages found: " + pages);
+                ScraperDebug.debugPrint("Number of pages found: " + pages);
             }
 
             @Override
             public void updateTotalPosts(int posts) {
-                // logsLabel.setText("Number of posts found: " + posts);
-                System.out.println("Number of posts found: " + posts);
-                // logsPane.setText(logsPane.getText() + "Number of posts found: " + posts + "\n");
-                total = Math.min(posts, scrapers.EmploiScraper.maxPostsToScrape);
+                logsLabel.setText("Number of posts found: " + posts);
+                ScraperDebug.debugPrint("Number of posts found: " + posts);
+                total = Math.min(posts, EmploiScraper.maxPostsToScrape);
             }
 
             @Override
@@ -93,8 +88,7 @@ public class JobPortalScraperUI extends JFrame {
                 int progress = (post * 100) / total;
                 logsLabel.setText("Scraping "+progress+"%.");
                 progressBar.setValue(progress);
-                System.out.println("Scraping "+progress+"% : " + url);
-                // logsPane.setText(logsPane.getText() + "Scraping "+progress+"% : " + url + "\n");
+                ScraperDebug.debugPrint("Scraping "+progress+"% : " + url);
             }
 
             @Override
@@ -102,94 +96,7 @@ public class JobPortalScraperUI extends JFrame {
                 int progress = (current * 100) / total;
                 logsLabel.setText("Storing "+progress+"%.");
                 progressBar.setValue(progress);
-                System.out.println("Storing "+progress+"%.");
-                // logsPane.setText(logsPane.getText() + "Storing "+progress+"%." + "\n");
-            }
-
-            @Override
-            public void finishedMysqlStorage(int success, int failed) {
-                // JOptionPane.showMessageDialog(null, "Finished storing: "+success+" success, "+failed+" failed.");
-                // logsPane.setText(logsPane.getText() + "Finished storing: "+success+" success, "+failed+" failed." + "\n");
-            }
-        });
-        */
-
-        rekruteScraper = new RekruteScraper();
-        rekruteScraper.setListener(scraperListener);
-        /*
-        rekruteScraper.setListener(new scrapers.ScraperListener() {
-            @Override
-            public void updateTotalPages(int pages) {
-                // logsLabel.setText("Number of pages found: " + pages);
-                System.out.println("Number of pages found: " + pages);
-                // logsPane.setText(logsPane.getText() + "Number of pages found: " + pages + "\n");
-            }
-
-            @Override
-            public void updateTotalPosts(int posts) {
-                // logsLabel.setText("Number of posts found: " + posts);
-                System.out.println("Number of posts found: " + posts);
-                // logsPane.setText(logsPane.getText() + "Number of posts found: " + posts + "\n");
-                total = Math.min(posts, scrapers.EmploiScraper.maxPostsToScrape);
-            }
-
-            @Override
-            public void updateCurrentPost(int post, String url) {
-                int progress = (post * 100) / total;
-                logsLabel.setText("Scraping "+progress+"%.");
-                progressBar.setValue(progress);
-                System.out.println("Scraping "+progress+"% : " + url);
-                // logsPane.setText(logsPane.getText() + "Scraping "+progress+"% : " + url + "\n");
-            }
-
-            @Override
-            public void updateCurrentStorage(int current) {
-                int progress = (current * 100) / total;
-                logsLabel.setText("Storing "+progress+"%.");
-                progressBar.setValue(progress);
-                System.out.println("Storing "+progress+"%.");
-                // logsPane.setText(logsPane.getText() + "Storing "+progress+"%." + "\n");
-            }
-
-            @Override
-            public void finishedMysqlStorage(int success, int failed) {
-                // JOptionPane.showMessageDialog(null, "Finished storing: "+success+" success, "+failed+" failed.");
-                // logsPane.setText(logsPane.getText() + "Finished storing: "+success+" success, "+failed+" failed." + "\n");
-            }
-        });
-        */
-
-        mjobScraper = new MjobScraper();
-        mjobScraper.setListener(scraperListener);
-        /*
-        mjobScraper.setListener(new scrapers.ScraperListener() {
-            @Override
-            public void updateTotalPages(int pages) {
-                // logsLabel.setText("Number of pages found: " + pages);
-                System.out.println("Number of pages found: " + pages);
-            }
-
-            @Override
-            public void updateTotalPosts(int posts) {
-                // logsLabel.setText("Number of posts found: " + posts);
-                System.out.println("Number of posts found: " + posts);
-                total = posts;
-            }
-
-            @Override
-            public void updateCurrentPost(int post, String url) {
-                int progress = (post * 100) / total;
-                logsLabel.setText("Scraping "+progress+"%.");
-                progressBar.setValue(progress);
-                System.out.println("Scraping "+progress+"% : " + url);
-            }
-
-            @Override
-            public void updateCurrentStorage(int current) {
-                int progress = (current * 100) / total;
-                logsLabel.setText("Storing "+progress+"%.");
-                progressBar.setValue(progress);
-                System.out.println("Storing "+progress+"%.");
+                ScraperDebug.debugPrint("Storing "+progress+"%.");
             }
 
             @Override
@@ -197,7 +104,79 @@ public class JobPortalScraperUI extends JFrame {
                 JOptionPane.showMessageDialog(null, "Finished storing: "+success+" success, "+failed+" failed.");
             }
         });
-         */
+
+        rekruteScraper = new RekruteScraper();
+        rekruteScraper.setListener(new scrapers.ScraperListener() {
+            @Override
+            public void updateTotalPages(int pages) {
+                logsLabel.setText("Number of pages found: " + pages);
+                ScraperDebug.debugPrint("Number of pages found: " + pages);
+            }
+
+            @Override
+            public void updateTotalPosts(int posts) {
+                logsLabel.setText("Number of posts found: " + posts);
+                ScraperDebug.debugPrint("Number of posts found: " + posts);
+                total = Math.min(posts, RekruteScraper.maxPostsToScrape);
+            }
+
+            @Override
+            public void updateCurrentPost(int post, String url) {
+                int progress = (post * 100) / total;
+                logsLabel.setText("Scraping "+progress+"%.");
+                progressBar.setValue(progress);
+                ScraperDebug.debugPrint("Scraping "+progress+"% : " + url);
+            }
+
+            @Override
+            public void updateCurrentStorage(int current) {
+                int progress = (current * 100) / total;
+                logsLabel.setText("Storing "+progress+"%.");
+                progressBar.setValue(progress);
+                ScraperDebug.debugPrint("Storing "+progress+"%.");
+            }
+
+            @Override
+            public void finishedMysqlStorage(int success, int failed) {
+                JOptionPane.showMessageDialog(null, "Finished storing: "+success+" success, "+failed+" failed.");
+            }
+        });
+        mjobScraper = new MjobScraper();
+        mjobScraper.setListener(new scrapers.ScraperListener() {
+            @Override
+            public void updateTotalPages(int pages) {
+                logsLabel.setText("Number of pages found: " + pages);
+                ScraperDebug.debugPrint("Number of pages found: " + pages);
+            }
+
+            @Override
+            public void updateTotalPosts(int posts) {
+                logsLabel.setText("Number of posts found: " + posts);
+                ScraperDebug.debugPrint("Number of posts found: " + posts);
+                total = Math.min(posts, MjobScraper.maxPostsToScrape);
+            }
+
+            @Override
+            public void updateCurrentPost(int post, String url) {
+                int progress = (post * 100) / total;
+                logsLabel.setText("Scraping "+progress+"%.");
+                progressBar.setValue(progress);
+                ScraperDebug.debugPrint("Scraping "+progress+"% : " + url);
+            }
+
+            @Override
+            public void updateCurrentStorage(int current) {
+                int progress = (current * 100) / total;
+                logsLabel.setText("Storing "+progress+"%.");
+                progressBar.setValue(progress);
+                ScraperDebug.debugPrint("Storing "+progress+"%.");
+            }
+
+            @Override
+            public void finishedMysqlStorage(int success, int failed) {
+                JOptionPane.showMessageDialog(null, "Finished storing: "+success+" success, "+failed+" failed.");
+            }
+        });
 
     }
 
@@ -255,8 +234,8 @@ public class JobPortalScraperUI extends JFrame {
 
         DefaultListModel<String> listModel = new DefaultListModel<>();
         listModel.addElement("Rekrute.ma");
-        listModel.addElement("Emploi.ma");
         listModel.addElement("M-job.ma");
+        listModel.addElement("Emploi.ma");
 
         websitesList = new JList<>(listModel);
         websitesList.setCellRenderer(new CenteredListCellRenderer());

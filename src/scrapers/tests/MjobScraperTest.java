@@ -1,7 +1,9 @@
-package scrapers;
+package scrapers.tests;
 
 import db.DBManager;
 import org.junit.Test;
+import scrapers.MjobScraper;
+import scrapers.ScraperListener;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -53,18 +55,6 @@ public class MjobScraperTest {
                 // JOptionPane.showMessageDialog(null, "Finished storing: "+success+" success, "+failed+" failed.");
             }
         });
-
-        /*System.out.println("Running fetchPageNumber test...");
-        test.fetchPageNumber();
-
-        System.out.println("Running fetchPagesUrls test...");
-        test.fetchPagesUrls();
-
-        System.out.println("Running fetchAllPostsUrl test...");
-        test.fetchAllPostsUrl();
-
-        System.out.println("Running fetchAllPostsAttributes test...");
-        test.fetchAllPostsAttributes();*/
 
         System.out.println("Running storeAllPosts test...");
         test.storeAllPosts();

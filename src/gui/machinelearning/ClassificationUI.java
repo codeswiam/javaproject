@@ -57,7 +57,7 @@ public class ClassificationUI extends JFrame {
     }
     public void filteredClassifier(){
         try {
-            ConverterUtils.DataSource source = new ConverterUtils.DataSource("data.arff");
+            ConverterUtils.DataSource source = new ConverterUtils.DataSource("data1000.arff");
             Instances data = source.getDataSet();
 
             data.setClassIndex(data.numAttributes() -1);

@@ -59,7 +59,11 @@ public class ClusteringChoiceUI extends JFrame {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ClassificationUI(clusterer.getSelectedItem().toString());
+                try {
+                    new ClusteringUI(clusterer.getSelectedItem().toString());
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
         footer.add(button);

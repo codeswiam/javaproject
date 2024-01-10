@@ -1,7 +1,8 @@
-package scrapers;
+package scrapers.tests;
 
 import db.DBManager;
 import org.junit.jupiter.api.Test;
+import scrapers.EmploiScraper;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

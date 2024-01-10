@@ -1,0 +1,1014 @@
+@relation 'dataEmploi-weka.filters.unsupervised.attribute.Remove-R1-3,5,7-11,15,20-28'
+
+@attribute publish_date {'aujourd hui','il y a 2 jours','il y a 3 jours','il y a 4 jours','il y a 5 jours','il y a 6 jours','il y a 7 jours','il y a 8 jours','il y a 10 jours','il y a 11 jours','il y a 12 jours','il y a 13 jours','il y a 14 jours','il y a 15 jours','il y a 16 jours','il y a 17 jours','il y a 18 jours','il y a 19 jours','il y a 20 jours','il y a 21 jours','il y a 22 jours','il y a 24 jours','il y a 25 jours','il y a 26 jours','il y a 27 jours'}
+@attribute company_name {OBS,'Mouvement Habad Loubavitch Maroc','Université Internationale de Rabat UIR','Yazaki Morocco','BMCI Groupe BNP Paribas','Manpower Agences','Atlas On Line',Unifitel,Tofflon,Na,OFPPT,Altados,'Alstom Maroc',Soprima,'Leet initiative','Ositel Group','Université Mohammed VI Polytechnique','Capgemini Engineering','Mon Job','Oceane Consulting','DXC Technology Maroc','Air Arabia',Capgemini,'Satec GS','Euro job','SQLI Maroc','Sofrecom Services Maroc','ALTEN Maroc','Bouygues Construction IT','Madaef Golfs','Excel Management Conseil','HP SEARCH','ORH Assessment',Maghrebail,'Eca Assurances',Intelcia,'CDG Développement','EnerGetic Link','MAJAL BERKANE SDL',Eqdom,'Eberhardt Frères Maroc',CMPE,SMMSocodamDavum,'UTAC Maroc','Expert Call Center','Intelcia ITS','Deloitte Extended Services',Révey,Tersea,'Disty technologies',Preci,'Colibri Services','Fondation Arrawaj',Leyton,'Société Générale Maroc',Crouzet,'Ansamble Maroc','CGI Technologies et Solutions Maroc','McDonald s Maroc','RhUbique Talents','AXA Group Operations Maroc','SGS Maroc SA','PwC services','SCR Maroc','Astek Technology Morocco','ARIA Tech','Axa Assurance Maroc','Bank Assafa','BhLab Maroc',Leboncall,'Journées Quebec',Sotherma,'Al Amana Microfinance','Kolibri Technologies','Atlas Hospitality Morocco AHM','GO RH Maroc',MaxAB,'Perenity Software','Sofadev Docapost BPO','CAC Centrale Automobile Chérifienne','Sitel Group','Structural Aerospace Morocco AVIAGROUP',Atos,'Royale Marocaine d Assurance',Madaef,'Imprima Platform Morocco',Novec,'AXA Rabat Axa Services',Alumetaux,Finéa,Somadir,'Moore Casablanca',SAPST,'Petit Forestier','Bourse de Casablanca','Safran Nacelles','Hit Radio','HPS Maroc','Groupe SMEIA','Xpertize Africa','Management Smart Consult','Econocom Maroc','Société des Boissons du Maroc',CDG,'Emirates Airlines','Comeca Maroc','The Global Phosphorus Institute',Accytime,'Club Med',MediaSource,'Webhelp Maroc',Richbond,Comicom,Involys}
+@attribute city {Rabat,Casablanca,Kénitra,Agadir,Mellal,le,Meknès,Marrakech,Autres,Tanger,Fès,Oujda,Safi,Dahab,Laâyoune,Settat,Côte}
+@attribute region {Maroc,France,Canada,'Côte d Ivoire',Sénégal,'Émirats Arabes Unis'}
+@attribute sector {'Secteur Informatique','Secteur Communication','Secteur Enseignement','Secteur Automobile','Secteur Banque','Secteur Agence pub','Secteur Centre d appel','Secteur Agroalimentaire','Secteur Distribution','Secteur BTP','Secteur Métallurgie','Secteur Conseil','Secteur Telecom','Secteur Aéronautique','Secteur Internet','Secteur Autres services','Secteur Transport','Secteur Recrutement','Secteur Offshoring','Secteur Hôtellerie','Secteur Agriculture','Secteur Service public','Secteur Assurance','Secteur Immobilier','Secteur Comptabilité','Secteur Autres Industries','Secteur Energie','Secteur Audiovisuel','Secteur Juridique','Secteur Chimie','Secteur Tourisme','Secteur Pharmacie','Secteur Electro','Secteur Import','Secteur Nettoyage','Secteur Cosmétique','Secteur Ameublement','Secteur Textile','Secteur Papier','Secteur Electricité','Secteur Ferroviaire','Secteur Plasturgie','Secteur Extraction'}
+@attribute contract_type {CDI,Autre,Freelance,Stage,CDD}
+@attribute education_level {'Bac 5 et plus','Bac 2','Bac 3','Bac 4',Autodidacte,Bac,'Qualification avant Bac','Bac 1'}
+@attribute diploma {'Ecole d ingénieur',Na,Master,'Formation professionnelle',Université,'BTS / DUT','Ecole de commerce',Autre,'Formation avant BAC','Formation spécialisée',Baccalauréat,'Doctorat / DEA'}
+@attribute experience {Na,'De 5 à 10 ans','De 3 à 5 ans','De 1 à 3 ans','Moins de 1 an','Plus de 20 ans','De 10 à 20 ans'}
+@attribute remote {Hybride,Non,'Oui 100'}
+
+@data
+'aujourd hui',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'aujourd hui',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'aujourd hui',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'aujourd hui',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'aujourd hui',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'aujourd hui',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'aujourd hui','Mouvement Habad Loubavitch Maroc',Casablanca,Maroc,'Secteur Communication',CDI,'Bac 5 et plus',Na,Na,Non
+'aujourd hui','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Communication',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'aujourd hui','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'aujourd hui','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 2','Formation professionnelle',Na,Non
+'aujourd hui','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'aujourd hui','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'aujourd hui','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'aujourd hui','Manpower Agences',Agadir,Maroc,'Secteur Agence pub',CDI,'Bac 2',Master,Na,Non
+'aujourd hui','BMCI Groupe BNP Paribas',Mellal,Maroc,'Secteur Banque',Autre,'Bac 3',Université,Na,Non
+'aujourd hui','Atlas On Line',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2','BTS / DUT',Na,Non
+'aujourd hui','Atlas On Line',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2','BTS / DUT',Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Tofflon,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 3',Na,'De 3 à 5 ans',Non
+'aujourd hui',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'aujourd hui',OFPPT,le,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Master,Na,Non
+'aujourd hui',Na,Meknès,Maroc,'Secteur BTP',CDI,'Bac 4',Master,Na,Non
+'aujourd hui',Na,Meknès,Maroc,'Secteur BTP',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'aujourd hui',Na,Casablanca,Maroc,'Secteur Métallurgie',CDI,'Bac 4','Ecole de commerce','De 3 à 5 ans',Non
+'aujourd hui',Altados,Casablanca,Maroc,'Secteur Conseil',Freelance,'Bac 5 et plus',Na,Na,Non
+'aujourd hui','Alstom Maroc',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'aujourd hui',Soprima,Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'aujourd hui','Leet initiative',Marrakech,Maroc,'Secteur Communication',CDI,Autodidacte,'Formation professionnelle','De 3 à 5 ans',Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui','Ositel Group',Casablanca,Maroc,'Secteur Telecom',Freelance,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'aujourd hui','Ositel Group',Casablanca,Maroc,'Secteur Telecom',Freelance,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'aujourd hui',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 2 jours','Université Mohammed VI Polytechnique',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 2 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Hybride
+'il y a 2 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Hybride
+'il y a 2 jours',Na,Casablanca,Maroc,'Secteur Banque',Autre,'Bac 5 et plus',Autre,'De 1 à 3 ans',Non
+'il y a 2 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 2 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 2 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 2 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 3 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','Ecole de commerce','Moins de 1 an',Non
+'il y a 3 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Banque',Stage,'Bac 5 et plus',Master,'Moins de 1 an',Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Ositel Group',Autres,France,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Oceane Consulting',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Ositel Group',Rabat,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Air Arabia',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 3 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 3 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 3 jours',Capgemini,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 3 jours','Yazaki Morocco',Tanger,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 3 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Satec GS',Tanger,Maroc,'Secteur Informatique',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 3 jours','Yazaki Morocco',Tanger,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Internet',CDI,'Bac 2',Na,'De 1 à 3 ans',Non
+'il y a 3 jours','Manpower Agences',Casablanca,Maroc,'Secteur Agence pub',CDI,'Bac 3',Master,Na,Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3',Na,Na,Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 4',Na,Na,Non
+'il y a 3 jours','Manpower Agences',Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 4',Na,'De 3 à 5 ans',Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 3 jours','Manpower Agences',Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Na,'Plus de 20 ans',Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours','Manpower Agences',Casablanca,Maroc,'Secteur Transport',CDI,'Bac 5 et plus',Na,'Plus de 20 ans',Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours','SQLI Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','SQLI Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours',Na,Rabat,Maroc,'Secteur Recrutement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Recrutement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',Stage,'Bac 2',Na,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',Stage,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDD,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','BTS / DUT',Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',Stage,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 3 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 3 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 3 jours','ALTEN Maroc',Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 3 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 3 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours','BMCI Groupe BNP Paribas',Marrakech,Maroc,'Secteur Banque',Autre,'Bac 3',Université,Na,Non
+'il y a 3 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours','BMCI Groupe BNP Paribas',Marrakech,Maroc,'Secteur Banque',Autre,'Bac 3',Université,Na,Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Offshoring',CDI,'Bac 3',Na,Na,Non
+'il y a 3 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDD,'Bac 3',Université,Na,Non
+'il y a 3 jours',Altados,Casablanca,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 3 jours','Bouygues Construction IT',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','Madaef Golfs',Rabat,Maroc,'Secteur Hôtellerie',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours',Altados,Casablanca,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 3 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Hybride
+'il y a 3 jours','HP SEARCH',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours','HP SEARCH',le,Maroc,'Secteur Agriculture',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 3 jours','HP SEARCH',Agadir,Maroc,'Secteur Agriculture',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Banque',Autre,'Bac 2',Autre,'Moins de 1 an',Non
+'il y a 3 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 3 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',Stage,'Bac 5 et plus',Na,Na,Hybride
+'il y a 3 jours','ORH Assessment',Rabat,Maroc,'Secteur Service public',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours','ORH Assessment',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 3 jours',Na,le,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 3 jours',Na,Casablanca,Maroc,'Secteur Offshoring',CDI,'Bac 3',Na,Na,Non
+'il y a 3 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 3 jours',Maghrebail,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 3 jours','Euro job',Casablanca,Maroc,'Secteur Internet',CDI,'Bac 2',Na,Na,Non
+'il y a 3 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 4 jours','Eca Assurances',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 2',Na,Na,Non
+'il y a 4 jours','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 4 jours',OBS,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 4 jours',Intelcia,Autres,Maroc,'Secteur Offshoring',CDI,'Bac 2',Na,Na,Non
+'il y a 4 jours',Intelcia,Autres,Maroc,'Secteur Offshoring',CDI,'Bac 2',Na,Na,Non
+'il y a 4 jours','CDG Développement',Casablanca,Maroc,'Secteur Immobilier',CDI,'Bac 5 et plus',Na,'De 10 à 20 ans',Non
+'il y a 4 jours','EnerGetic Link',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 4 jours','CDG Développement',Casablanca,Maroc,'Secteur Immobilier',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Banque',Autre,'Bac 3',Université,Na,Hybride
+'il y a 4 jours','MAJAL BERKANE SDL',Oujda,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 4 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 4 jours',Eqdom,Casablanca,Maroc,'Secteur Banque',CDD,'Bac 3','BTS / DUT',Na,Non
+'il y a 4 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 4 jours',Na,Rabat,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 4 jours','Eberhardt Frères Maroc',le,Maroc,'Secteur Hôtellerie',CDI,'Bac 5 et plus',Na,'De 5 à 10 ans',Non
+'il y a 4 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Agence pub',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 4 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 4 jours','ORH Assessment',le,Maroc,'Secteur BTP',CDI,'Bac 4',Na,Na,Non
+'il y a 4 jours','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Comptabilité',Stage,'Bac 5 et plus',Master,Na,Non
+'il y a 4 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 4 jours',Na,le,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 4 jours',Na,le,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 4 jours',Na,le,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 4 jours',Na,Casablanca,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 4 jours',CMPE,Safi,Maroc,'Secteur Autres Industries',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 4 jours',SMMSocodamDavum,Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole de commerce','De 10 à 20 ans',Non
+'il y a 4 jours','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 5 jours','UTAC Maroc',Mellal,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 5 jours','Expert Call Center',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,Na,Non
+'il y a 5 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours',Altados,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours','Intelcia ITS',Autres,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 5 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours',Na,Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 5 jours','Manpower Agences',Agadir,Maroc,'Secteur Agroalimentaire',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 5 jours',Révey,Casablanca,Maroc,'Secteur Agroalimentaire',Stage,'Bac 5 et plus',Master,Na,Non
+'il y a 5 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 5 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 5 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Qualification avant Bac',Na,Na,Non
+'il y a 5 jours',Na,Marrakech,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 5 jours',Na,le,Maroc,'Secteur Agroalimentaire',CDI,'Bac 4',Na,Na,Non
+'il y a 5 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 5 jours',Tersea,Casablanca,Maroc,'Secteur Assurance',CDI,Bac,Na,Na,Non
+'il y a 5 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 5 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours',Preci,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours',Preci,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours',Preci,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours',Na,le,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 5 jours',Na,le,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 5 jours','Colibri Services',Casablanca,Maroc,'Secteur Offshoring',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 5 jours','Expert Call Center',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,'Moins de 1 an',Non
+'il y a 5 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours','Alstom Maroc',Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 5 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 5 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Hybride
+'il y a 5 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 3','Ecole d ingénieur',Na,Hybride
+'il y a 5 jours','Fondation Arrawaj',Rabat,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Non
+'il y a 5 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours','UTAC Maroc',Mellal,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 5 jours','EnerGetic Link',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 5 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 5 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 5 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 5 jours','Eca Assurances',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 5 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 3','Formation avant BAC',Na,Non
+'il y a 6 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 6 jours','ORH Assessment',Dahab,Maroc,'Secteur Energie',CDI,'Bac 3','Formation spécialisée',Na,Non
+'il y a 6 jours',Na,Rabat,Maroc,'Secteur Audiovisuel',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 6 jours',Na,Rabat,Maroc,'Secteur Audiovisuel',Autre,'Bac 2',Na,Na,Hybride
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,'De 5 à 10 ans',Hybride
+'il y a 6 jours',Na,Oujda,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 6 jours',Na,Oujda,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 6 jours','Eca Assurances',Casablanca,Maroc,'Secteur Juridique',Stage,'Bac 5 et plus',Na,Na,Non
+'il y a 6 jours','Alstom Maroc',Fès,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 6 jours',Tersea,Casablanca,Maroc,'Secteur Assurance',CDI,Bac,Na,Na,Non
+'il y a 6 jours',Leyton,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 6 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Non
+'il y a 6 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 6 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 6 jours',Intelcia,Autres,Maroc,'Secteur Offshoring',CDI,'Bac 3',Na,Na,Non
+'il y a 6 jours',Leyton,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 6 jours',Crouzet,Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 6 jours',Na,Fès,Maroc,'Secteur Centre d appel',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 6 jours',Na,Marrakech,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 6 jours','Ansamble Maroc',Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 2','Ecole de commerce','De 3 à 5 ans',Non
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,'De 5 à 10 ans',Hybride
+'il y a 6 jours','Bouygues Construction IT',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 6 jours','CGI Technologies et Solutions Maroc',Casablanca,Maroc,'Secteur Offshoring',Stage,'Bac 4',Master,Na,Non
+'il y a 6 jours','SQLI Maroc',Oujda,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 6 jours',Na,Rabat,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 6 jours','Ansamble Maroc',Casablanca,Maroc,'Secteur Hôtellerie',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Non
+'il y a 6 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 6 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 6 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 6 jours','McDonald s Maroc',Laâyoune,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Formation professionnelle',Na,Non
+'il y a 6 jours',Na,Fès,Maroc,'Secteur Banque',CDI,Bac,Baccalauréat,Na,Non
+'il y a 6 jours','Université Mohammed VI Polytechnique',le,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 6 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 6 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 6 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 6 jours','Université Mohammed VI Polytechnique',le,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 6 jours','BMCI Groupe BNP Paribas',Mellal,Maroc,'Secteur Banque',Autre,'Bac 3',Université,Na,Non
+'il y a 6 jours','Manpower Agences',Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 6 jours',Na,Tanger,Maroc,'Secteur Autres Industries',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 6 jours','Université Mohammed VI Polytechnique',le,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 6 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 6 jours','Université Mohammed VI Polytechnique',le,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 6 jours',CMPE,Safi,Maroc,'Secteur Autres Industries',CDI,'Bac 3',Na,Na,Non
+'il y a 6 jours','Université Mohammed VI Polytechnique',Casablanca,Maroc,'Secteur Enseignement',CDI,'Qualification avant Bac',Na,Na,Non
+'il y a 6 jours','Université Mohammed VI Polytechnique',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 3',Na,Na,Non
+'il y a 6 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 3',Na,Na,Non
+'il y a 6 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 6 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 6 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','BTS / DUT','Moins de 1 an',Non
+'il y a 6 jours','RhUbique Talents',le,Maroc,'Secteur Hôtellerie',CDI,'Bac 3',Université,Na,'Oui 100'
+'il y a 6 jours','AXA Group Operations Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 7 jours','SGS Maroc SA',le,Maroc,'Secteur Chimie',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 7 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours','PwC services',Casablanca,Maroc,'Secteur Comptabilité',CDD,'Bac 5 et plus',Master,Na,Hybride
+'il y a 7 jours','ORH Assessment',Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours','Université Mohammed VI Polytechnique',Autres,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours','SCR Maroc',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 1',Baccalauréat,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Autre,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours','SCR Maroc',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours','Astek Technology Morocco',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 7 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Hybride
+'il y a 7 jours','Astek Technology Morocco',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 7 jours','Manpower Agences',Casablanca,Maroc,'Secteur Juridique',CDI,'Bac 3',Université,Na,Non
+'il y a 7 jours','ARIA Tech',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Marrakech,Maroc,'Secteur Tourisme',CDD,'Bac 2','BTS / DUT','De 3 à 5 ans',Non
+'il y a 7 jours','Axa Assurance Maroc',le,Maroc,'Secteur Assurance',Autre,'Bac 3',Na,Na,Non
+'il y a 7 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 7 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 7 jours','ORH Assessment',le,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours',Altados,Casablanca,Maroc,'Secteur Banque',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours','SCR Maroc',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours','ARIA Tech',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 7 jours','SCR Maroc',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 7 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 7 jours','Bank Assafa',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours','Bank Assafa',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours','Manpower Agences',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 7 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 3',Université,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 4','Formation spécialisée',Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Communication',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Comptabilité',CDI,'Bac 4','Formation spécialisée',Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 3','Formation spécialisée',Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Service public',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Recrutement',CDI,'Bac 4',Na,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Pharmacie',CDI,'Bac 3',Na,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Recrutement',CDI,'Bac 4',Na,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Crouzet,Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 4',Na,Na,Non
+'il y a 7 jours',Na,Rabat,Maroc,'Secteur Banque',CDI,Bac,Baccalauréat,Na,Non
+'il y a 7 jours',Na,le,Maroc,'Secteur Banque',CDI,Bac,Baccalauréat,Na,Hybride
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Centre d appel',CDI,'Bac 5 et plus','Formation spécialisée',Na,Hybride
+'il y a 7 jours','BhLab Maroc',Casablanca,Maroc,'Secteur Pharmacie',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 7 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 3',Na,Na,Non
+'il y a 7 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 3',Université,Na,Non
+'il y a 7 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 3',Na,Na,Non
+'il y a 7 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours',Na,le,Maroc,'Secteur Agriculture',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 7 jours','Manpower Agences',Casablanca,Maroc,'Secteur Agroalimentaire',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 7 jours',Na,Autres,Canada,'Secteur Automobile',CDD,Bac,Na,'De 5 à 10 ans',Non
+'il y a 7 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Qualification avant Bac',Na,Na,Non
+'il y a 7 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 7 jours',Leboncall,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Baccalauréat,'Moins de 1 an',Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Banque',Autre,'Bac 3',Na,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Banque',Autre,'Bac 3',Na,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Banque',Autre,'Bac 3',Na,Na,Non
+'il y a 7 jours',Na,Fès,Maroc,'Secteur Banque',Autre,'Bac 3',Na,Na,Non
+'il y a 8 jours','CGI Technologies et Solutions Maroc',Fès,Maroc,'Secteur Informatique',Stage,'Bac 4',Master,Na,Non
+'il y a 8 jours','CGI Technologies et Solutions Maroc',Casablanca,Maroc,'Secteur Informatique',Stage,'Bac 3','BTS / DUT',Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 10 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 10 jours','ORH Assessment',Dahab,Maroc,'Secteur Energie',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 10 jours','ORH Assessment',Dahab,Maroc,'Secteur Energie',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 10 jours','ORH Assessment',Dahab,Maroc,'Secteur Energie',CDI,'Bac 3','Formation spécialisée',Na,Non
+'il y a 10 jours','ORH Assessment',Dahab,Maroc,'Secteur Energie',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 10 jours','Bank Assafa',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 10 jours','ORH Assessment',Casablanca,Maroc,'Secteur Energie',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 10 jours',Altados,Casablanca,Maroc,'Secteur Energie',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 10 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 10 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 3',Na,Na,Non
+'il y a 10 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 10 jours',Na,Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 10 jours','Manpower Agences',Agadir,Maroc,'Secteur Agroalimentaire',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 10 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 10 jours','McDonald s Maroc',Fès,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Ecole de commerce',Na,Non
+'il y a 10 jours','McDonald s Maroc',Casablanca,Maroc,'Secteur Hôtellerie',CDI,'Bac 2','Formation professionnelle',Na,Non
+'il y a 10 jours','McDonald s Maroc',Agadir,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Formation professionnelle',Na,Non
+'il y a 10 jours','SQLI Maroc',Oujda,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 10 jours',Altados,Rabat,Maroc,'Secteur Telecom',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 10 jours','McDonald s Maroc',Settat,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Formation professionnelle',Na,Non
+'il y a 10 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 10 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 10 jours',Capgemini,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 10 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 10 jours','Manpower Agences',Settat,Maroc,'Secteur Autres Industries',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 10 jours',Na,Fès,Maroc,'Secteur Recrutement',CDI,'Bac 5 et plus','Formation spécialisée',Na,Non
+'il y a 10 jours','McDonald s Maroc',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Formation professionnelle',Na,Non
+'il y a 10 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 1',Université,'Moins de 1 an',Non
+'il y a 10 jours',Na,Casablanca,Maroc,'Secteur Banque',CDD,'Bac 3',Na,Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 10 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 10 jours',Na,Rabat,Maroc,'Secteur Autres services',Stage,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 10 jours',OFPPT,Casablanca,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 10 jours',OFPPT,Casablanca,Maroc,'Secteur Agence pub',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 10 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 3',Na,Na,Non
+'il y a 10 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 3',Na,Na,Non
+'il y a 10 jours','McDonald s Maroc',Marrakech,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Formation professionnelle',Na,Non
+'il y a 10 jours','ORH Assessment',Dahab,Maroc,'Secteur Energie',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 10 jours',Leyton,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole d ingénieur','De 3 à 5 ans',Hybride
+'il y a 10 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 11 jours','CGI Technologies et Solutions Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 11 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours',Crouzet,le,Maroc,'Secteur Electro',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 11 jours',Crouzet,Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 11 jours',Crouzet,Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 3',Na,Na,Non
+'il y a 11 jours',Crouzet,Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 11 jours',Sotherma,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 11 jours','Al Amana Microfinance',Rabat,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 11 jours','Kolibri Technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3','Formation professionnelle',Na,Non
+'il y a 11 jours','Kolibri Technologies',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 4',Université,Na,Non
+'il y a 11 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 11 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 3',Na,Na,Hybride
+'il y a 11 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Offshoring',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 11 jours','Oceane Consulting',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 11 jours','Oceane Consulting',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 11 jours',Na,Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 11 jours','Kolibri Technologies',Casablanca,Maroc,'Secteur Import',CDI,'Bac 4',Master,Na,Non
+'il y a 11 jours','Al Amana Microfinance',Rabat,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 11 jours',Na,Rabat,Maroc,'Secteur Audiovisuel',Stage,'Bac 2',Na,Na,Hybride
+'il y a 11 jours','Al Amana Microfinance',Rabat,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 11 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Atlas Hospitality Morocco AHM',Oujda,Maroc,'Secteur Hôtellerie',Autre,'Bac 2','Formation spécialisée',Na,Non
+'il y a 11 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours',Tersea,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3','Formation professionnelle',Na,Non
+'il y a 11 jours','GO RH Maroc',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 11 jours',MaxAB,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 11 jours',Na,Tanger,Maroc,'Secteur Centre d appel',CDD,Bac,Na,'Moins de 1 an','Oui 100'
+'il y a 11 jours','ARIA Tech',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 11 jours',Na,Rabat,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours',Leboncall,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Baccalauréat,'Moins de 1 an',Non
+'il y a 11 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus','Doctorat / DEA',Na,Non
+'il y a 11 jours','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 11 jours','Perenity Software',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 11 jours','Perenity Software',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Hôtellerie',Autre,'Bac 3','Formation professionnelle',Na,Non
+'il y a 12 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Hôtellerie',Autre,Bac,'Formation spécialisée',Na,Non
+'il y a 12 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Hôtellerie',Autre,Bac,'Formation spécialisée',Na,Non
+'il y a 12 jours','Expert Call Center',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Autre,'Moins de 1 an',Non
+'il y a 12 jours','Eca Assurances',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours','Colibri Services',Autres,France,'Secteur Pharmacie',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 3',Master,Na,Hybride
+'il y a 12 jours','ORH Assessment',Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 12 jours',Na,Rabat,Maroc,'Secteur Banque',CDI,Bac,Baccalauréat,Na,Non
+'il y a 12 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 12 jours','Colibri Services',Casablanca,Maroc,'Secteur Recrutement',CDI,'Bac 4',Master,Na,Non
+'il y a 12 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 12 jours',OFPPT,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours',OFPPT,Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 12 jours',Altados,Rabat,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 12 jours',Tersea,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 12 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 12 jours','AXA Group Operations Maroc',Rabat,Maroc,'Secteur Comptabilité',Stage,'Bac 2',Na,Na,Hybride
+'il y a 12 jours','Colibri Services',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours','Sofadev Docapost BPO',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus','Ecole de commerce','De 3 à 5 ans',Non
+'il y a 12 jours','Expert Call Center',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3',Na,Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Hybride
+'il y a 12 jours','Manpower Agences',Casablanca,Maroc,'Secteur Agence pub',CDI,'Bac 3',Master,Na,Non
+'il y a 12 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 12 jours',Na,Côte,'Côte d Ivoire','Secteur Informatique',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 12 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 12 jours',Altados,Casablanca,Maroc,'Secteur Banque',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 12 jours',Na,le,Sénégal,'Secteur Informatique',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 12 jours',Na,Rabat,Maroc,'Secteur Autres services',CDI,'Bac 3',Université,Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus','Ecole de commerce','De 5 à 10 ans',Non
+'il y a 12 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 12 jours',Capgemini,le,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 12 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 12 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 12 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 12 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 12 jours',Na,Rabat,Maroc,'Secteur Offshoring',Stage,'Bac 2',Université,Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 4',Université,Na,Non
+'il y a 12 jours',Na,Mellal,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 12 jours',Na,Meknès,Maroc,'Secteur Métallurgie',CDI,'Bac 3','Ecole de commerce','De 3 à 5 ans',Non
+'il y a 12 jours',Na,Meknès,Maroc,'Secteur BTP',CDI,'Bac 3','Ecole de commerce','De 3 à 5 ans',Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Electro',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 4','Ecole de commerce',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 4','Ecole de commerce',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 12 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 13 jours','GO RH Maroc',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 13 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Nettoyage',Autre,'Qualification avant Bac','Formation spécialisée',Na,Non
+'il y a 13 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Cosmétique',Autre,'Bac 3','Formation spécialisée',Na,Non
+'il y a 13 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Hôtellerie',Autre,'Bac 4','Formation professionnelle',Na,Non
+'il y a 13 jours','Atlas Hospitality Morocco AHM',Marrakech,Maroc,'Secteur Hôtellerie',Autre,'Bac 4','Formation professionnelle',Na,Non
+'il y a 13 jours','SGS Maroc SA',Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,'Moins de 1 an',Non
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',Autre,'Bac 2','Formation professionnelle','Moins de 1 an',Non
+'il y a 13 jours',Altados,Casablanca,Maroc,'Secteur Energie',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Casablanca,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 13 jours','CAC Centrale Automobile Chérifienne',le,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDD,'Bac 4',Université,Na,Non
+'il y a 13 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,Na,Non
+'il y a 13 jours','Sitel Group',Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Baccalauréat,Na,Non
+'il y a 13 jours','Sitel Group',Rabat,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,Na,Non
+'il y a 13 jours','Université Internationale de Rabat UIR',Rabat,Maroc,'Secteur Recrutement',CDI,'Bac 5 et plus','Ecole de commerce','De 3 à 5 ans',Non
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Autres,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Structural Aerospace Morocco AVIAGROUP',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Non
+'il y a 13 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 13 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours',Na,Rabat,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours','Air Arabia',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 3',Université,Na,Non
+'il y a 13 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 3',Na,Na,Non
+'il y a 13 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2','BTS / DUT','Moins de 1 an',Non
+'il y a 13 jours','Astek Technology Morocco',le,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Ameublement',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 13 jours','Kolibri Technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3','Ecole d ingénieur',Na,Non
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours',Atos,Casablanca,Maroc,'Secteur Informatique',Autre,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours','Eca Assurances',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 13 jours','CAC Centrale Automobile Chérifienne',le,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',Agadir,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours',Leyton,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Hybride
+'il y a 13 jours',Leyton,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Hybride
+'il y a 13 jours',Leyton,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Hybride
+'il y a 13 jours','Royale Marocaine d Assurance',le,Maroc,'Secteur Assurance',Freelance,'Bac 2',Na,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',Meknès,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',Marrakech,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',Casablanca,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',Oujda,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',Tanger,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours','Royale Marocaine d Assurance',le,Maroc,'Secteur Assurance',CDD,'Bac 2',Na,Na,Non
+'il y a 13 jours','Astek Technology Morocco',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 13 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 13 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 13 jours','PwC services',Casablanca,Maroc,'Secteur Comptabilité',CDD,'Bac 5 et plus',Master,Na,Hybride
+'il y a 13 jours',Capgemini,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Hybride
+'il y a 13 jours',Madaef,Rabat,Maroc,'Secteur Hôtellerie',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 13 jours','Imprima Platform Morocco',Tanger,Maroc,'Secteur Textile',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 13 jours',Altados,Casablanca,Maroc,'Secteur Chimie',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 13 jours',Novec,Rabat,Maroc,'Secteur BTP',CDI,'Bac 2',Na,Na,Non
+'il y a 13 jours',Altados,Casablanca,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours',Novec,Rabat,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 13 jours','Madaef Golfs',Fès,Maroc,'Secteur Hôtellerie',CDI,'Bac 4',Master,Na,Non
+'il y a 13 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 13 jours',Na,Rabat,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 13 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 13 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 13 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 13 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 13 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Assurance',CDD,'Bac 4',Université,Na,Hybride
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Assurance',CDD,'Bac 4',Université,Na,Hybride
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Hybride
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Hybride
+'il y a 14 jours','UTAC Maroc',Mellal,Maroc,'Secteur Automobile',CDI,'Bac 4',Master,'De 3 à 5 ans',Non
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Hybride
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Hybride
+'il y a 14 jours','UTAC Maroc',Mellal,Maroc,'Secteur Agence pub',CDI,'Bac 4','Ecole d ingénieur','De 3 à 5 ans',Non
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Hybride
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Hybride
+'il y a 14 jours','UTAC Maroc',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur','De 3 à 5 ans',Hybride
+'il y a 14 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 14 jours','AXA Rabat Axa Services',Rabat,Maroc,'Secteur Assurance',CDI,'Bac 3','BTS / DUT',Na,Hybride
+'il y a 14 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4','Ecole d ingénieur',Na,Hybride
+'il y a 14 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 4',Master,Na,Non
+'il y a 14 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours',Alumetaux,Marrakech,Maroc,'Secteur Distribution',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Informatique',Autre,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours','Université Mohammed VI Polytechnique',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 14 jours','Université Mohammed VI Polytechnique',Rabat,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 14 jours','Université Mohammed VI Polytechnique',Autres,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 14 jours','Université Mohammed VI Polytechnique',Autres,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 14 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 14 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours','Colibri Services',Casablanca,Maroc,'Secteur Tourisme',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Recrutement',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','BTS / DUT','De 1 à 3 ans',Hybride
+'il y a 14 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Agriculture',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 14 jours','ORH Assessment',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 14 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 14 jours','Oceane Consulting',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 14 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Hybride
+'il y a 14 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 14 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 3',Na,Na,Non
+'il y a 14 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 3',Na,Na,Non
+'il y a 14 jours',Altados,Casablanca,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 14 jours',Atos,Casablanca,Maroc,'Secteur Informatique',Autre,'Bac 5 et plus',Master,'De 1 à 3 ans',Hybride
+'il y a 14 jours','Kolibri Technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours','ARIA Tech',Casablanca,Maroc,'Secteur Informatique',Stage,'Bac 5 et plus',Master,Na,Hybride
+'il y a 14 jours','UTAC Maroc',Mellal,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur','De 1 à 3 ans',Hybride
+'il y a 14 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 14 jours',Finéa,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 14 jours',Somadir,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours',Na,Fès,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 14 jours',Na,Rabat,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours',Leboncall,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Autre,Na,Non
+'il y a 14 jours',Crouzet,Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 2','BTS / DUT','De 3 à 5 ans',Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce','De 5 à 10 ans',Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce','De 10 à 20 ans',Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 14 jours','Société Générale Maroc',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 14 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 14 jours',Na,Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus','Ecole de commerce','De 10 à 20 ans',Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 4',Université,Na,Non
+'il y a 15 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 3',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 4',Université,Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 16 jours',Na,Casablanca,Maroc,'Secteur BTP',CDI,'Bac 3','Ecole de commerce','De 3 à 5 ans',Non
+'il y a 16 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 16 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 16 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 16 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 16 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 16 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur BTP',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Autres Industries',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Autres Industries',CDD,'Bac 5 et plus',Master,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Papier',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Electro',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Electricité',CDD,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Autres Industries',CDD,'Bac 5 et plus',Master,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Autres Industries',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Electro',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Banque',CDD,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur BTP',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur BTP',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur BTP',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur BTP',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Internet',CDD,'Bac 2','BTS / DUT',Na,Hybride
+'il y a 17 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 17 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Informatique',CDD,'Bac 3',Université,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Telecom',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',Stage,'Bac 4',Na,'Moins de 1 an',Non
+'il y a 17 jours',Somadir,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 3',Université,Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 17 jours',Somadir,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Hybride
+'il y a 17 jours','Manpower Agences',Tanger,Maroc,'Secteur Tourisme',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 17 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 17 jours',Na,le,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 17 jours','Moore Casablanca',Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,'De 5 à 10 ans',Hybride
+'il y a 17 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 17 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 17 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Telecom',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 17 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Telecom',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 17 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 17 jours',SAPST,Rabat,Maroc,'Secteur Immobilier',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 17 jours','Sofrecom Services Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole de commerce',Na,Hybride
+'il y a 17 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Autres Industries',CDD,'Bac 2','BTS / DUT',Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur Ferroviaire',CDD,'Bac 5 et plus',Master,Na,Non
+'il y a 17 jours','Journées Quebec',Autres,Canada,'Secteur BTP',CDD,'Bac 2','BTS / DUT','De 5 à 10 ans',Non
+'il y a 17 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3',Université,'De 1 à 3 ans',Non
+'il y a 17 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 17 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 17 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 17 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 18 jours','Petit Forestier',Casablanca,Maroc,'Secteur Transport',CDI,'Bac 2',Na,Na,Non
+'il y a 18 jours',Na,Meknès,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 18 jours',Na,Meknès,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Non
+'il y a 18 jours',Leboncall,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Autre,Na,Non
+'il y a 18 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 18 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 18 jours','Bourse de Casablanca',Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 18 jours','Euro job',Casablanca,Maroc,'Secteur Agence pub',CDI,'Bac 2','Ecole de commerce',Na,Non
+'il y a 18 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Telecom',CDI,'Bac 5 et plus',Na,Na,'Oui 100'
+'il y a 18 jours','HP SEARCH',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3',Université,Na,Non
+'il y a 18 jours','Capgemini Engineering',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Hybride
+'il y a 18 jours',Na,Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 3',Master,Na,Non
+'il y a 18 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 18 jours','Safran Nacelles',Casablanca,Maroc,'Secteur Aéronautique',CDD,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 18 jours',Novec,Rabat,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 18 jours',Novec,Rabat,Maroc,'Secteur Energie',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Non
+'il y a 18 jours','Hit Radio',Rabat,Maroc,'Secteur Audiovisuel',Stage,'Bac 5 et plus',Na,Na,Hybride
+'il y a 18 jours',Altados,Casablanca,Maroc,'Secteur Informatique',Freelance,'Bac 5 et plus',Na,Na,Non
+'il y a 18 jours',Leyton,le,Maroc,'Secteur Autres services',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Non
+'il y a 18 jours','HPS Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 18 jours',Leyton,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 3 à 5 ans',Hybride
+'il y a 18 jours',Na,Rabat,Maroc,'Secteur Agriculture',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 18 jours',Na,Rabat,Maroc,'Secteur Agriculture',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 19 jours','Groupe SMEIA',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 19 jours','AXA Group Operations Maroc',Rabat,Maroc,'Secteur Informatique',Stage,'Bac 4',Na,Na,Hybride
+'il y a 19 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,Na,Non
+'il y a 19 jours','AXA Group Operations Maroc',Rabat,Maroc,'Secteur Informatique',Stage,'Bac 2',Na,Na,Hybride
+'il y a 19 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,Na,Non
+'il y a 19 jours',Na,Rabat,Maroc,'Secteur Autres services',Stage,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 19 jours','Safran Nacelles',Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 19 jours',OBS,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 19 jours','CGI Technologies et Solutions Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 5 à 10 ans',Hybride
+'il y a 19 jours','Xpertize Africa',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3','Ecole d ingénieur','De 5 à 10 ans',Non
+'il y a 19 jours','Management Smart Consult',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 19 jours','Manpower Agences',Casablanca,Maroc,'Secteur Enseignement',CDI,'Bac 4',Master,Na,Non
+'il y a 19 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 19 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Assurance',CDI,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 19 jours',Na,Casablanca,Maroc,'Secteur Comptabilité',CDD,'Bac 3',Master,Na,Non
+'il y a 19 jours','Groupe SMEIA',Fès,Maroc,'Secteur Automobile',CDI,'Bac 2',Na,Na,Non
+'il y a 19 jours',Na,Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 3',Na,Na,Non
+'il y a 19 jours',Na,Rabat,Maroc,'Secteur Agriculture',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 19 jours','Groupe SMEIA',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 4','Ecole de commerce',Na,Non
+'il y a 19 jours','Groupe SMEIA',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 19 jours','Groupe SMEIA',Rabat,Maroc,'Secteur Automobile',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 19 jours',Na,Fès,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Université,Na,Non
+'il y a 19 jours','BMCI Groupe BNP Paribas',Casablanca,Maroc,'Secteur Banque',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 19 jours','Econocom Maroc',Rabat,Maroc,'Secteur Informatique',Autre,'Bac 2','BTS / DUT',Na,Hybride
+'il y a 19 jours',Tersea,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 19 jours','Expert Call Center',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3',Na,Na,Non
+'il y a 19 jours',Tersea,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 19 jours','Manpower Agences',Tanger,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 20 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 20 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 20 jours','Leet initiative',Marrakech,Maroc,'Secteur Informatique',CDD,Autodidacte,Autre,Na,Non
+'il y a 20 jours','Leet initiative',Marrakech,Maroc,'Secteur Enseignement',CDI,Autodidacte,Na,Na,Non
+'il y a 20 jours',Na,Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 20 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 20 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur','Moins de 1 an',Hybride
+'il y a 20 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,Na,Non
+'il y a 20 jours','CGI Technologies et Solutions Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 5 à 10 ans',Non
+'il y a 20 jours','CGI Technologies et Solutions Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 20 jours',Na,Mellal,Maroc,'Secteur Automobile',CDI,'Bac 4',Master,'De 5 à 10 ans',Non
+'il y a 20 jours','Manpower Agences',Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 2',Na,Na,Non
+'il y a 20 jours','PwC services',Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 20 jours','Manpower Agences',Marrakech,Maroc,'Secteur BTP',CDI,'Bac 5 et plus',Na,'De 5 à 10 ans',Non
+'il y a 20 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2','Ecole de commerce','Moins de 1 an',Non
+'il y a 20 jours','Société des Boissons du Maroc',Meknès,Maroc,'Secteur Agriculture',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 20 jours','Intelcia ITS',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 20 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4','Ecole d ingénieur',Na,Hybride
+'il y a 20 jours','Intelcia ITS',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 20 jours','Intelcia ITS',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 20 jours','GO RH Maroc',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 20 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur','Moins de 1 an',Hybride
+'il y a 20 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 20 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 20 jours',SMMSocodamDavum,Casablanca,Maroc,'Secteur BTP',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 21 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,'De 5 à 10 ans',Non
+'il y a 21 jours','ORH Assessment',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 21 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,'Oui 100'
+'il y a 21 jours',Novec,Rabat,Maroc,'Secteur BTP',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 21 jours','McDonald s Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 21 jours','McDonald s Maroc',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 21 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 21 jours',Na,Marrakech,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 21 jours',Na,Fès,Maroc,'Secteur Informatique',Autre,'Bac 3','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 21 jours',Na,Tanger,Maroc,'Secteur Informatique',Autre,'Bac 3','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 3','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours','HP SEARCH',Casablanca,Maroc,'Secteur Recrutement',CDI,'Bac 3',Master,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours',Intelcia,Autres,Maroc,'Secteur Centre d appel',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Intelcia ITS',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 21 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours',Na,Rabat,Maroc,'Secteur Agriculture',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 21 jours','Eca Assurances',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Deloitte Extended Services',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,'Oui 100'
+'il y a 21 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 3',Université,Na,Non
+'il y a 21 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours','Yazaki Morocco',Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 21 jours',Na,Rabat,Maroc,'Secteur Audiovisuel',CDI,'Bac 3',Master,Na,Hybride
+'il y a 21 jours','ARIA Tech',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 21 jours','ARIA Tech',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 21 jours','Manpower Agences',Fès,Maroc,'Secteur BTP',CDI,'Bac 4',Na,'De 10 à 20 ans',Non
+'il y a 21 jours',CDG,Rabat,Maroc,'Secteur Juridique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours',Na,Rabat,Maroc,'Secteur Agence pub',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 21 jours','Université Mohammed VI Polytechnique',Laâyoune,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','PwC services',Casablanca,Maroc,'Secteur Comptabilité',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 21 jours',Na,le,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Non
+'il y a 21 jours','Oceane Consulting',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 21 jours','Oceane Consulting',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 21 jours','Oceane Consulting',Rabat,Maroc,'Secteur Internet',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 21 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours',Na,Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,'De 1 à 3 ans',Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Laâyoune,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours',Altados,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 21 jours',Altados,Autres,France,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours',Leboncall,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,'Moins de 1 an',Non
+'il y a 21 jours','Emirates Airlines',Autres,'Émirats Arabes Unis','Secteur Tourisme',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours','Université Mohammed VI Polytechnique',Marrakech,Maroc,'Secteur Enseignement',CDD,'Bac 5 et plus',Na,Na,Non
+'il y a 21 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 21 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 3','Formation spécialisée',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Import',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Distribution',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4','Ecole d ingénieur',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4',Na,Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 4','Formation spécialisée',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 22 jours','Disty technologies',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Formation spécialisée',Na,Non
+'il y a 24 jours','Comeca Maroc',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 2','BTS / DUT','De 3 à 5 ans',Non
+'il y a 24 jours','ORH Assessment',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 3','Ecole d ingénieur',Na,Non
+'il y a 24 jours',OBS,Rabat,Maroc,'Secteur Agence pub',CDI,'Bac 4',Master,Na,Hybride
+'il y a 24 jours','Imprima Platform Morocco',Tanger,Maroc,'Secteur Textile',CDI,'Bac 2',Na,Na,Non
+'il y a 24 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 24 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Assurance',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 24 jours',Na,Rabat,Maroc,'Secteur Centre d appel',CDI,Bac,Baccalauréat,Na,Non
+'il y a 24 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','Ecole de commerce','De 1 à 3 ans',Non
+'il y a 24 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3',Master,Na,Non
+'il y a 24 jours','The Global Phosphorus Institute',Marrakech,Maroc,'Secteur Agence pub',CDI,'Bac 3',Na,Na,Non
+'il y a 24 jours','The Global Phosphorus Institute',Marrakech,Maroc,'Secteur Enseignement',CDI,'Bac 3',Na,Na,Non
+'il y a 24 jours','Air Arabia',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 24 jours','ORH Assessment',Casablanca,Maroc,'Secteur Communication',CDI,'Bac 3','Formation spécialisée',Na,'Oui 100'
+'il y a 24 jours','Safran Nacelles',Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 25 jours',Na,Casablanca,Maroc,'Secteur Autres services',CDI,'Bac 3','Ecole de commerce',Na,Non
+'il y a 25 jours',Intelcia,Autres,Maroc,'Secteur Centre d appel',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 25 jours','Madaef Golfs',Rabat,Maroc,'Secteur Hôtellerie',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 25 jours','Safran Nacelles',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 25 jours','Safran Nacelles',Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 25 jours',Novec,le,Maroc,'Secteur BTP',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 25 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 25 jours',Alumetaux,Marrakech,Maroc,'Secteur Distribution',CDI,'Bac 2','BTS / DUT',Na,Non
+'il y a 25 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 25 jours','ORH Assessment',Casablanca,Maroc,'Secteur Assurance',CDI,'Bac 2',Université,Na,Non
+'il y a 25 jours','Intelcia ITS',Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 25 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 25 jours',Intelcia,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 25 jours',Intelcia,Kénitra,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 25 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 25 jours','Oceane Consulting',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 25 jours',Na,Rabat,Maroc,'Secteur Informatique',CDI,Bac,Baccalauréat,Na,Non
+'il y a 26 jours','Expert Call Center',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 2',Na,Na,Non
+'il y a 26 jours',OBS,Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 4',Master,Na,Non
+'il y a 26 jours',Na,Casablanca,Maroc,'Secteur Aéronautique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 26 jours',Intelcia,Autres,Maroc,'Secteur Centre d appel',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 26 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 26 jours',Unifitel,Casablanca,Maroc,'Secteur Banque',CDI,'Bac 2',Na,Na,Non
+'il y a 26 jours',Accytime,Rabat,Maroc,'Secteur Centre d appel',CDI,'Bac 3',Na,Na,Hybride
+'il y a 26 jours','Ositel Group',Casablanca,Maroc,'Secteur Telecom',Freelance,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 26 jours','Club Med',Marrakech,Maroc,'Secteur Hôtellerie',CDD,'Bac 3','Formation professionnelle','De 1 à 3 ans',Non
+'il y a 26 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 26 jours',Na,Casablanca,Maroc,'Secteur Plasturgie',CDI,'Bac 4',Master,Na,Non
+'il y a 26 jours','GO RH Maroc',Casablanca,Maroc,'Secteur Conseil',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 26 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Non
+'il y a 26 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 26 jours','Atlas Hospitality Morocco AHM',Rabat,Maroc,'Secteur Hôtellerie',CDI,'Bac 4','Formation spécialisée',Na,Non
+'il y a 26 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Banque',Freelance,'Bac 5 et plus',Master,Na,Non
+'il y a 26 jours',OBS,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 26 jours',Na,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 26 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3',Université,Na,Non
+'il y a 26 jours',Tersea,Casablanca,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 26 jours','Comeca Maroc',Casablanca,Maroc,'Secteur Electricité',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 26 jours','Ositel Group',Casablanca,Maroc,'Secteur Telecom',Freelance,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 26 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Banque',Freelance,'Bac 5 et plus',Master,'De 10 à 20 ans',Non
+'il y a 26 jours','Excel Management Conseil',Rabat,Maroc,'Secteur Banque',Freelance,'Bac 5 et plus',Master,'De 5 à 10 ans',Non
+'il y a 26 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 27 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Hybride
+'il y a 27 jours',MediaSource,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,'De 3 à 5 ans',Hybride
+'il y a 27 jours','Webhelp Maroc',Rabat,Maroc,'Secteur Centre d appel',Autre,Bac,Autre,Na,Non
+'il y a 27 jours',Richbond,Casablanca,Maroc,'Secteur Autres Industries',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 27 jours','AXA Group Operations Maroc',Rabat,Maroc,'Secteur Internet',CDI,'Bac 3',Na,Na,Hybride
+'il y a 27 jours','Mon Job',Casablanca,Maroc,'Secteur Centre d appel',CDI,'Bac 3','BTS / DUT','Moins de 1 an',Non
+'il y a 27 jours','Manpower Agences',Casablanca,Maroc,'Secteur Juridique',CDI,'Bac 3',Université,Na,Non
+'il y a 27 jours','Manpower Agences',Agadir,Maroc,'Secteur Immobilier',Autre,'Bac 5 et plus',Master,Na,Non
+'il y a 27 jours',Na,Casablanca,Maroc,'Secteur Agroalimentaire',CDI,'Bac 5 et plus','Ecole de commerce',Na,Non
+'il y a 27 jours','Yazaki Morocco',Tanger,Maroc,'Secteur Automobile',CDI,'Bac 3','Formation professionnelle',Na,Non
+'il y a 27 jours',Na,Rabat,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 27 jours','Intelcia ITS',Autres,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Non
+'il y a 27 jours','AXA Group Operations Maroc',Rabat,Maroc,'Secteur Service public',CDI,'Bac 3',Na,Na,Non
+'il y a 27 jours','Webhelp Maroc',Rabat,Maroc,'Secteur Centre d appel',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Kénitra,Maroc,'Secteur Centre d appel',CDI,Bac,Na,Na,Non
+'il y a 27 jours','Webhelp Maroc',Agadir,Maroc,'Secteur Centre d appel',CDI,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Rabat,Maroc,'Secteur Centre d appel',Autre,Bac,Na,Na,Non
+'il y a 27 jours','Webhelp Maroc',Meknès,Maroc,'Secteur Centre d appel',CDI,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Marrakech,Maroc,'Secteur Tourisme',CDI,Bac,Na,Na,'Oui 100'
+'il y a 27 jours','Webhelp Maroc',Marrakech,Maroc,'Secteur Centre d appel',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Marrakech,Maroc,'Secteur Cosmétique',Autre,Bac,Na,Na,Non
+'il y a 27 jours','Webhelp Maroc',Marrakech,Maroc,'Secteur Centre d appel',Autre,Bac,Na,Na,Non
+'il y a 27 jours','Webhelp Maroc',Fès,Maroc,'Secteur Centre d appel',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Casablanca,Maroc,'Secteur Assurance',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Agadir,Maroc,'Secteur Centre d appel',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Agadir,Maroc,'Secteur Tourisme',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Rabat,Maroc,'Secteur Assurance',Autre,Bac,Autre,Na,Non
+'il y a 27 jours',Na,Fès,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 27 jours','Manpower Agences',Tanger,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 27 jours',Comicom,Kénitra,Maroc,'Secteur Automobile',CDI,'Bac 2',Na,Na,Non
+'il y a 27 jours','Safran Nacelles',Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 3',Master,Na,Non
+'il y a 27 jours','Webhelp Maroc',Fès,Maroc,'Secteur Centre d appel',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Fès,Maroc,'Secteur Tourisme',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Fès,Maroc,'Secteur Tourisme',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Fès,Maroc,'Secteur Tourisme',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Webhelp Maroc',Fès,Maroc,'Secteur Tourisme',Autre,Bac,Autre,Na,Non
+'il y a 27 jours','Sofrecom Services Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus','Ecole d ingénieur','Moins de 1 an',Hybride
+'il y a 27 jours',Na,Casablanca,Maroc,'Secteur Ameublement',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 27 jours',OBS,Rabat,Maroc,'Secteur Informatique',CDI,'Bac 5 et plus',Na,Na,Hybride
+'il y a 27 jours',Na,Tanger,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Hybride
+'il y a 27 jours',Na,Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur',Na,Non
+'il y a 27 jours',Na,Casablanca,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus','Ecole d ingénieur','De 5 à 10 ans',Non
+'il y a 27 jours','Yazaki Morocco',Meknès,Maroc,'Secteur Automobile',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 27 jours','DXC Technology Maroc',Rabat,Maroc,'Secteur Informatique',CDI,'Bac 4',Master,Na,Hybride
+'il y a 27 jours',Involys,Casablanca,Maroc,'Secteur Informatique',CDI,'Bac 3','BTS / DUT',Na,Non
+'il y a 27 jours','Atlas Hospitality Morocco AHM',Fès,Maroc,'Secteur Hôtellerie',CDI,'Bac 3','Formation professionnelle',Na,Non
+'il y a 27 jours','Manpower Agences',Tanger,Maroc,'Secteur Extraction',CDI,'Bac 5 et plus',Master,Na,Non
+'il y a 27 jours','Manpower Agences',Tanger,Maroc,'Secteur Hôtellerie',CDI,'Bac 5 et plus',Na,Na,Non
